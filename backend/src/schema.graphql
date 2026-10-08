@@ -1,0 +1,202 @@
+scalar DateTime
+
+type Query {
+  "search matches the work order number or title."
+  workOrders(limit: Int = 50, offset: Int = 0, states: [WorkOrderState!], sfQuoteId: String, buildingId: ID, search: String): WorkOrderPage!
+  "id is the work order id or its number."
+  workOrder(id: ID!): WorkOrderDetails
+  parts(search: String, limit: Int = 20): [Part!]!
+  device(id: ID!): Device
+}
+
+type Mutation {
+  createWorkOrder(input: CreateWorkOrderInput!): WorkOrder!
+  addItem(input: AddItemInput!): WorkOrder!
+  updateItem(input: UpdateItemInput!): WorkOrder!
+  removeItem(workOrderId: ID!, itemId: ID!): WorkOrder!
+  "Supply team: the catalogue part an EXTERNAL_PART item turned out to be."
+  assignCataloguePart(workOrderId: ID!, itemId: ID!, partId: ID!): WorkOrder!
+  "Create the Salesforce quote for these work orders, or add them to an existing draft quote."
+  pushQuoteToSalesforce(workOrderIds: [ID!]!, sfQuoteId: String): [WorkOrder!]!
+}
+
+enum WorkOrderType { CALLOUT REPAIR SHUTDOWN }
+enum UrgencyLevel { URGENT IN_THE_WEEK FOR_THE_NEXT_VISIT }
+enum WorkOrderState {
+  PART_TO_ESTIMATE
+  QUOTE_TO_SEND
+  QUOTE_TO_SIGN_BY_CUSTOMER
+  QUOTE_TO_VERIFY_PO
+  WORK_TO_DO
+  DONE
+  DENIED
+  CANCELLED
+}
+enum WorkOrderItemType { PART MAN_HOUR EXTERNAL_PART TECH_SUPPORT INSTALLATION }
+enum QuoteStatus { DRAFT TO_SIGN VALIDATION SIGNED WORKS_IN_PROGRESS TO_BE_BILLED BILLED REFUSED }
+enum ContractType { BASIC ADVANCED COMPREHENSIVE CLIENT_SPECIFIC }
+
+type WorkOrderPage {
+  items: [WorkOrder!]!
+  totalCount: Int!
+}
+
+type WorkOrder {
+  id: ID!
+  workOrderNumber: String!
+  workOrderType: WorkOrderType!
+  urgencyLevel: UrgencyLevel!
+  state: WorkOrderState!
+  title: String
+  description: String!
+  isChargeable: Boolean!
+  deviceId: ID!
+  device: Device
+  items: [WorkOrderItem!]!
+  sfQuoteId: String
+  "The quote's page in Salesforce."
+  sfQuoteLink: String
+  quoteNumber: String
+  quoteStatus: QuoteStatus
+  createdAt: DateTime!
+  updatedAt: DateTime!
+}
+
+type WorkOrderDetails {
+  id: ID!
+  workOrderNumber: String!
+  workOrderType: WorkOrderType!
+  urgencyLevel: UrgencyLevel!
+  state: WorkOrderState!
+  title: String
+  description: String!
+  isChargeable: Boolean!
+  items: [WorkOrderItem!]!
+  sfQuoteId: String
+  "The quote's page in Salesforce."
+  sfQuoteLink: String
+  quoteNumber: String
+  quoteStatus: QuoteStatus
+  createdAt: DateTime!
+  updatedAt: DateTime!
+  "Read live from Salesforce."
+  quote: Quote
+  "Other work orders on the same Salesforce quote."
+  bundledWorkOrders: [WorkOrder!]!
+  device: Device
+}
+
+type WorkOrderItem {
+  id: ID!
+  type: WorkOrderItemType!
+  partId: ID
+  part: Part
+  "Parts, or hours for MAN_HOUR items."
+  quantity: Float
+  "Free-text name of an EXTERNAL_PART."
+  description: String
+  comment: String
+  "Cost of the item (what we pay). This represents the company's cost for the item. Use sellPrice for the margin/sell price. Can be null if not set yet."
+  price: Float
+  "Sell price of the item (separate from cost). Used for items that need to track separate cost and margin, such as Installation items. Can be null if not set."
+  sellPrice: Float
+}
+
+input CreateWorkOrderInput {
+  deviceId: ID!
+  type: WorkOrderType!
+  urgencyLevel: UrgencyLevel!
+  title: String
+  description: String!
+  isChargeable: Boolean!
+  items: [NewItemInput!]!
+}
+
+input NewItemInput {
+  type: WorkOrderItemType!
+  partId: ID
+  quantity: Float
+  description: String
+  comment: String
+  price: Float
+  sellPrice: Float
+}
+
+input AddItemInput {
+  workOrderId: ID!
+  type: WorkOrderItemType!
+  partId: ID
+  quantity: Float
+  description: String
+  comment: String
+  price: Float
+  sellPrice: Float
+}
+
+input UpdateItemInput {
+  workOrderId: ID!
+  itemId: ID!
+  quantity: Float
+  price: Float
+  sellPrice: Float
+}
+
+type Quote {
+  id: ID!
+  reference: String!
+  number: String!
+  status: QuoteStatus!
+  grandTotal: Float!
+  currencyISOCode: String!
+  emittedDate: DateTime!
+  description: String
+  accountName: String
+  documentAvailable: Boolean!
+}
+
+type Part {
+  id: ID!
+  sku: String!
+  name: String!
+  brand: String
+  averageCost: Float
+  isInactive: Boolean!
+}
+
+type Device {
+  id: ID!
+  deviceNo: String!
+  building: Building!
+  contracts: [ContractDevice!]!
+}
+
+type Building {
+  id: ID!
+  name: String!
+  city: String!
+  countryCode: String!
+  customer: Customer!
+}
+
+type Customer {
+  id: Int!
+  companyName: String!
+  countryCode: String!
+}
+
+type ContractDevice {
+  id: ID!
+  amount: Float!
+  startDate: DateTime!
+  endDate: DateTime!
+  isTerminated: Boolean!
+  contract: Contract!
+}
+
+type Contract {
+  id: ID!
+  contractNo: String!
+  type: ContractType!
+  startDate: DateTime!
+  endDate: DateTime!
+}

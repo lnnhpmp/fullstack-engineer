@@ -1,0 +1,8 @@
+node_modules/
+dist/
+.devenv/
+.devenv.flake.nix
+devenv.local.nix
+.env
+.direnv/
+.svelte-kit/

@@ -1,0 +1,395 @@
+code,section,designation,unit,unit_price_eur_excl_vat,supply_lead_time_weeks,works_duration_weeks,technical_reference,comment
+0001AS,HOURLY RATE,Hourly rate (travel included),h,103.72,,,not applicable,
+0002AS,HOURLY RATE,Surcharged hourly rate (travel included),h,108.97,,,not applicable,"night (midnight - 6am), Sunday, public holiday"
+5050AS,COEFFICIENT,Coefficient on asbestos-removal subcontractor,coefficient (e.g. 1.07),1.31,,,not applicable,to apply to the subcontractor's invoice (to be provided)
+0097AS,COEFFICIENT,Coefficient on a part not on the price list,coefficient (e.g. 1.07),1.41,,,not applicable,to apply to the supplier's invoice (to be provided)
+5510AS,COEFFICIENT,Coefficient on subcontractor (excluding asbestos removal),coefficient (e.g. 1.07),1.31,,,not applicable,to apply to the subcontractor's invoice (to be provided)
+5600AS,DEDUCTIONS,Unit discount for an order of 11 to 50 units of the same part reference,%,6%,,,not applicable,a sliding-scale discount may be applied according to the quantities ordered
+5610AS,DEDUCTIONS,Unit discount for an order of more than 50 units of the same part reference,%,8%,,,not applicable,a sliding-scale discount may be applied according to the quantities ordered
+0003AS,SERVICES,Daily rate for setting up a goods-carrying service,price per day,99.60,,,Annex 5 to the technical specification,two 2-hour slots per day
+0004AS,SERVICES,Hourly rate for setting up a goods-carrying service for 1 week - in case of additional works on,price per week,909.90,,,Annex 5 to the technical specification,"two 2-hour slots per day, Monday to Saturday"
+0005AS,SERVICES,Daily rate for setting up a people-carrying service,price per trip down + trip up,99.60,,,Annex 5 to the technical specification,one trip down and one trip up
+0006AS,SERVICES,Retrieval of an object from the bottom of the pit,each,73.35,,,not applicable,within the breakdown call-out times
+0009AS,CAR,Inspection control box on car roof,each,517.97,3,1,Annex 5 to the technical specification,installation or replacement
+0010AS,CAR,Stop button on car,each,111.80,1,1,,installation or replacement
+0015AS,CAR,230V socket on and under car,each,208.35,2,1,,installation or replacement
+0020AS,CAR,Rail brakes,each,2698.37,4,1,Annex 5 to the technical specification,
+0025AS,CAR,Fitting anti-creep pawls,each,6022.60,5,1,,installation or replacement
+0030AS,CAR,"Fixed car-roof balustrade, 1 side",each,734.87,2,1,Annex 5 to the technical specification,installation or replacement
+0035AS,CAR,"Fixed car-roof balustrade, 2 sides",each,911.48,2,1,Annex 5 to the technical specification,installation or replacement
+0040AS,CAR,"Fixed car-roof balustrade, 3 sides",each,787.60,2,1,Annex 5 to the technical specification,installation or replacement
+0045AS,CAR,Car-roof balustrade — retractable/folding 1 side,each,734.87,2,1,Annex 5 to the technical specification,retractable/folding 1 side
+0050AS,CAR,Car-roof balustrade — retractable/folding 2 side,each,911.48,2,1,Annex 5 to the technical specification,retractable/folding 2 side
+0055AS,CAR,Car-roof balustrade — retractable/folding 3 side,each,787.60,2,1,Annex 5 to the technical specification,retractable/folding 3 side
+0060AS,CAR,Light-curtain barriers — installation > full height,each,1776.61,3,1,Annex 5 to the technical specification,installation > full height
+0065AS,CAR,Light-curtain barriers — replacement > full height,each,1640.90,3,1,Annex 5 to the technical specification,replacement > full height
+0070AS,CAR,Replacement of the main lighting — rated load <= 450 kg,each,224.81,1,1,Annex 5 to the technical specification,rated load <= 450 kg
+0071AS,CAR,Replacement of the main lighting — 450 kg < rated load <= 700 kg,each,302.91,1,1,Annex 5 to the technical specification,450 kg < rated load <= 700 kg
+0072AS,CAR,Replacement of the main lighting — 700 kg < rated load,each,549.20,1,1,Annex 5 to the technical specification,700 kg < rated load
+0075AS,CAR,Emergency lighting in the car,each,308.28,2,1,Annex 5 to the technical specification,installation
+0080AS,CAR,Replacement of car light diffusers,each,171.27,2,1,not applicable,like for like or equivalent
+0085AS,CAR,Replacement of a button / control panel,each,140.60,2,1,Annex 5 to the technical specification,"call, alarm... like for like"
+0090AS,CAR,"Car push-button box, base 6 levels",each,4558.30,2,1,Annex 5 to the technical specification,voice announcer + position indicator + remote alarm pre-wiring
+0095AS,CAR,Replacement of the car push-button box - supplement or deduction per additional level,per level,171.81,2,1,Annex 5 to the technical specification,supplement or deduction on code 0090AS
+0100AS,CAR,Installation of a voice announcer,each,2333.88,1,1,,
+0105AS,CAR,Replacement of a key switch,each,232.88,1,1,not applicable,like for like
+0110AS,CAR,Installation of a key switch,each,659.98,1,1,"on the existing push-button box, kept. 3 keys supplied to the client",
+0115AS,CAR,Position / direction indicator,each,263.55,2,1,,in the car (like for like or equivalent)
+0120AS,CAR,"Car replacement - with a class 1 vandal-resistant car - including operator, push-button box and car door — rated load <= 450 kg",each,16628.00,8,1,Annex 5 to the technical specification: sheets 0120AS + 095AS + 0330/355AS,rated load <= 450 kg
+0125AS,CAR,"Car replacement - with a class 1 vandal-resistant car - including operator, push-button box and car door — 450 kg < rated load <= 700 kg",each,23828.00,8,1,Annex 5 to the technical specification: sheets 0120AS + 095AS + 0330/355AS,450 kg < rated load <= 700 kg
+0130AS,CAR,"Car replacement - with a class 1 vandal-resistant car - including operator, push-button box and car door — 700 kg < rated load",each,20241.00,8,1,Annex 5 to the technical specification: sheets 0120AS + 095AS + 0330/355AS,700 kg < rated load
+0135AS,CAR,"Car lining, etched 18/10 stainless steel — rated load <= 450 kg",each,6199.86,4,1,Annex 5 to the technical specification,rated load <= 450 kg
+0140AS,CAR,"Car lining, laminate — rated load <= 450 kg",each,6199.86,4,1,Annex 5 to the technical specification,rated load <= 450 kg
+0145AS,CAR,"Car lining, etched 18/10 stainless steel — 450 kg < rated load <= 700 kg",each,5410.49,4,1,Annex 5 to the technical specification,450 kg < rated load <= 700 kg
+0150AS,CAR,"Car lining, laminate — 450 kg < rated load <= 700 kg",each,7364.47,4,1,Annex 5 to the technical specification,450 kg < rated load <= 700 kg
+0155AS,CAR,"Car lining, etched 18/10 stainless steel — 700 kg < rated load",each,5317.78,4,1,Annex 5 to the technical specification,700 kg < rated load
+0160AS,CAR,"Car lining, laminate — 700 kg < rated load",each,5317.78,4,1,Annex 5 to the technical specification,700 kg < rated load
+0165AS,CAR,Replacement of the studded rubber floor — rated load <= 450 kg,each,468.18,4,1,Annex 5 to the technical specification,rated load <= 450 kg
+0170AS,CAR,Replacement of the studded rubber floor — 450 kg < rated load <= 700 kg,each,560.14,4,1,Annex 5 to the technical specification,450 kg < rated load <= 700 kg
+0175AS,CAR,Replacement of the studded rubber floor — 700 kg < rated load,each,983.30,4,1,Annex 5 to the technical specification,700 kg < rated load
+0180AS,CAR,"Replacement of the floor, 18/10 stainless steel tray — rated load <= 450 kg",each,1259.01,4,1,Annex 5 to the technical specification: sheet 0135AS: § on the stainless steel floor only.,rated load <= 450 kg
+0185AS,CAR,"Replacement of the floor, 18/10 stainless steel tray — 450 kg < rated load <= 700 kg",each,1837.44,4,1,Annex 5 to the technical specification: sheet 0135AS: § on the stainless steel floor only.,450 kg < rated load <= 700 kg
+0190AS,CAR,"Replacement of the floor, 18/10 stainless steel tray — 700 kg < rated load",each,2743.88,4,1,Annex 5 to the technical specification: sheet 0135AS: § on the stainless steel floor only.,700 kg < rated load
+0195AS,CAR,"Replacement of the floor, terrazzo-type stone — rated load <= 450 kg",each,1259.01,4,1,Annex 5 to the technical specification,rated load <= 450 kg
+0200AS,CAR,"Replacement of the floor, terrazzo-type stone — 450 kg < rated load <= 700 kg",each,1837.44,4,1,Annex 5 to the technical specification,450 kg < rated load <= 700 kg
+0205AS,CAR,"Replacement of the floor, terrazzo-type stone — 700 kg < rated load",each,2743.88,4,1,Annex 5 to the technical specification,700 kg < rated load
+0210AS,CAR,"False ceiling, refurbishment",each,302.29,4,2,not applicable,"removal, painting, straightening, refitting.."
+0215AS,CAR,"False ceiling: replacement — with fixings, rated load <= 450 kg",each,1982.70,3,2,Annex 5 to the technical specification: sheet 0135AS: § false ceiling only.,"with fixings, rated load <= 450 kg"
+0216AS,CAR,"False ceiling: replacement — 450 kg < with fixings, rated load <= 700 kg",each,3004.85,3,2,,"450 kg < with fixings, rated load <= 700 kg"
+0217AS,CAR,"False ceiling: replacement — 700 kg < with fixings, rated load",each,2491.29,3,2,,"700 kg < with fixings, rated load"
+0220AS,CAR,Fitting a mirror in the car,each,565.81,1,1,Annex 5 to the technical specification: sheet 0135AS: § mirror only.,
+0225AS,CAR,Fitting an aluminium handrail,each,308.98,1,1,,
+0230AS,CAR,Fitting a stainless steel handrail,each,302.29,1,1,,
+0235AS,CAR,Lintel replacement,each,516.73,2,1,not applicable,like for like
+0240AS,CAR,Fitting a car skirting,each,365.19,1,1,Annex 5 to the technical specification: sheet 0135AS: § skirting only.,
+0245AS,CAR,Car ventilation,each,198.22,3,1,Annex 5 to the technical specification: sheet 0135AS: § ventilation only.,grilles fitted
+0250AS,CAR,Car gate lock,each,122.90,3,1,not applicable,"refurbishment, like for like"
+0255AS,CAR,Car gate,each,359.47,3,1,not applicable,"refurbishment, like for like"
+0260AS,CAR,Fitting/replacement of car gate contact,each,271.60,3,1,not applicable,including updated wiring diagrams
+0265AS,CAR,Replacement of the safety gear linkage,each,4606.47,5,1,,
+0270AS,CAR,Replacement of safety gear blocks + stirrup + crosshead,each,11832.25,5,2,,
+0271AS,CAR,Replacement of single-acting safety gear block,each,11960.79,6,1,,
+0272AS,CAR,Replacement of double-acting safety gear block,each,16384.61,6,1,,
+0275AS,CAR,Rust removal + painting under the car,each,710.07,3,1,not applicable,two coats of paint
+0280AS,CAR,Rust removal on the car toe guard,each,198.22,3,1,not applicable,
+0285AS,CAR,Moving parts under the car,each,710.07,3,1,not applicable,rust removal and lubrication
+0290AS,CAR,Fixed stainless steel toe guard,each,418.91,2,1,Annex 5 to the technical specification,height 750 mm
+0295AS,CAR,Retractable stainless steel toe guard,each,1434.11,2,1,Annex 5 to the technical specification,height 750 mm when deployed
+0300AS,CAR,"Fixed toe guard, electro-galvanised or painted",each,485.57,2,1,Annex 5 to the technical specification,height 750 mm
+0305AS,CAR,"Retractable toe guard, electro-galvanised or painted",each,818.13,2,1,Annex 5 to the technical specification,height 750 mm when deployed
+0310AS,CAR,Replacement of the aluminium car sill,each,411.84,2,2,,and its fixing (like for like)
+0315AS,CAR,Replacement of the stainless steel car sill,each,827.47,2,2,,and its fixing (like for like)
+0320AS,CAR,Replacement of the retiring cam,each,974.62,2,2,,and its fixing (like for like)
+0325AS,CAR,Replacement of the variable-frequency door operator only — for telescopic doors,each,3930.99,6,1,Annex 5 to the technical specification,for telescopic doors
+0326AS,CAR,Replacement of the variable-frequency door operator only — for centre-opening doors,each,3930.99,6,1,Annex 5 to the technical specification,for centre-opening doors
+0327AS,CAR,Replacement of the variable-frequency door operator only — for folding (accordion) doors,each,2841.36,6,1,Annex 5 to the technical specification,for folding (accordion) doors
+0330AS,CAR,"Replacement of the variable-frequency operator + car doors — stainless steel doors, vandal-resistance class 1 per EN81-71, clear opening <= 700 mm",each,3441.53,5,2,Annex 5 to the technical specification: sheets 0325AS + 0360AS,"stainless steel doors, vandal-resistance class 1 per EN81-71, clear opening <= 700 mm"
+0335AS,CAR,"Replacement of the variable-frequency operator + car doors — painted steel doors, vandal-resistance class 1 per EN81-71, clear opening <= 700 mm",each,4059.91,5,2,Annex 5 to the technical specification: sheets 0325AS + 0365AS,"painted steel doors, vandal-resistance class 1 per EN81-71, clear opening <= 700 mm"
+0340AS,CAR,"Replacement of the variable-frequency operator + car doors — stainless steel doors, vandal-resistance class 1 per EN81-71, 700 mm < clear opening <= 900 mm",each,4864.00,5,2,Annex 5 to the technical specification: sheets 0325AS + 0370AS,"stainless steel doors, vandal-resistance class 1 per EN81-71, 700 mm < clear opening <= 900 mm"
+0345AS,CAR,"Replacement of the variable-frequency operator + car doors — painted steel doors, vandal-resistance class 1 per EN81-71, 700 mm < clear opening <= 900 mm",each,4352.03,5,2,Annex 5 to the technical specification: sheets 0325AS + 0375AS,"painted steel doors, vandal-resistance class 1 per EN81-71, 700 mm < clear opening <= 900 mm"
+0350AS,CAR,"Replacement of the variable-frequency operator + car doors — stainless steel doors, vandal-resistance class 1 per EN81-71, 900 mm < clear opening",each,6313.25,5,2,Annex 5 to the technical specification: sheets 0325AS + 0380AS,"stainless steel doors, vandal-resistance class 1 per EN81-71, 900 mm < clear opening"
+0355AS,CAR,"Replacement of the variable-frequency operator + car doors — painted steel doors, vandal-resistance class 1 per EN81-71, 900 mm < clear opening",each,8097.18,5,2,Annex 5 to the technical specification: sheets 0325AS + 0385AS,"painted steel doors, vandal-resistance class 1 per EN81-71, 900 mm < clear opening"
+0356AS,CAR,Replacement of the variable-frequency operator + car doors — folding (accordion) doors without vision panel,each,3452.44,5,2,Annex 5 to the technical specification: sheets 0325AS + 0385AS,folding (accordion) doors without vision panel
+0357AS,CAR,Replacement of the variable-frequency operator + car doors — folding (accordion) doors with vision panel,each,5131.48,5,2,Annex 5 to the technical specification: sheets 0325AS + 0385AS,folding (accordion) doors with vision panel
+0358AS,CAR,"Replacement of the variable-frequency operator + car doors — folding (accordion) doors, anodised (colour other than aluminium)",each,3768.70,5,2,state the supplement on the previous lines,"folding (accordion) doors, anodised (colour other than aluminium)"
+0360AS,CAR,"Replacement of a car door panel — stainless steel doors, clear opening <= 700 mm",each,1575.88,5,1,Annex 5 to the technical specification,"stainless steel doors, clear opening <= 700 mm"
+0365AS,CAR,"Replacement of a car door panel — painted steel doors, clear opening <= 700 mm",each,979.57,5,1,Annex 5 to the technical specification,"painted steel doors, clear opening <= 700 mm"
+0370AS,CAR,"Replacement of a car door panel — stainless steel doors, 700 mm < clear opening <= 900 mm",each,1943.84,5,1,Annex 5 to the technical specification,"stainless steel doors, 700 mm < clear opening <= 900 mm"
+0375AS,CAR,"Replacement of a car door panel — painted steel doors, 700 mm < clear opening <= 900 mm",each,1339.27,5,1,Annex 5 to the technical specification,"painted steel doors, 700 mm < clear opening <= 900 mm"
+0380AS,CAR,"Replacement of a car door panel — stainless steel doors, 900 mm < clear opening",each,1307.89,5,1,Annex 5 to the technical specification,"stainless steel doors, 900 mm < clear opening"
+0385AS,CAR,"Replacement of a car door panel — painted steel doors, 900 mm < clear opening",each,753.32,5,1,Annex 5 to the technical specification,"painted steel doors, 900 mm < clear opening"
+0390AS,CAR,"Replacement of door hangers — carriages, rollers, counter-rollers, etc. (car)",each,877.40,1,1,,"carriages, rollers, counter-rollers, etc."
+0395AS,CAR,Replacement of the operator drive belt,each,236.67,2,1,not applicable,like for like
+0400AS,CAR,Car door lock,each,198.22,2,1,,like-for-like replacement or installation
+0401AS,CAR,Door operator motor,each,1108.67,1,1,not applicable,like for like
+0402AS,CAR,Operator circuit board,each,2630.96,2,1,not applicable,like for like
+0405AS,CAR,Fitting a load-weighing device,each,545.00,5,1,measurement accuracy +/- 5%,electronic
+0410AS,CAR,Remote alarm incl. three-way intercom/voice announcer,each,726.00,2,1,Annex 5 to the technical specification,complete supply
+0415AS,CAR,Emergency call at the bottom of the pit,each,485.70,3,1,"Annex 5 to the technical specification: sheet 0410AS, partly",device replacement
+0420AS,CAR,Emergency call on the car roof,each,485.70,3,1,"Annex 5 to the technical specification: sheet 0410AS, partly",device replacement
+0425AS,CAR,Emergency call in the car,each,485.70,3,1,"Annex 5 to the technical specification: sheet 0410AS, partly",device replacement
+0430AS,CAR,Installation of a GSM gateway on the existing remote alarm,each,533.43,1,1,Annex 5 to the technical specification,
+0435AS,CAR,Remote alarm replacement incl. three-way intercom and GSM gateway,each,1360.00,3,1,Annex 5 to the technical specification,
+0440AS,CAR,Replacement and adaptation of oil-fed guide shoes on the car,each,1936.00,2,1,not applicable,1 set for 4 guide shoes
+0445AS,CAR,Replacement and adaptation of guide shoes on the counterweight,each,1936.00,2,1,not applicable,1 set for 4 guide shoes
+1005AS,LANDINGS,Replacement of a landing button,per level,81.74,1,1,Annex 5 to the technical specification,like for like or equivalent
+1006AS,LANDINGS,Replacement of a landing circuit board or remote unit,per level,535.35,1,1,Annex 5 to the technical specification,like for like or equivalent
+1007AS,LANDINGS,Replacement of a landing button and its landing circuit board or remote unit,per level,535.35,1,1,Annex 5 to the technical specification,like for like or equivalent
+1010AS,LANDINGS,"Replacement of a complete push-button box — 1 button, its faceplate and fixing",per level,272.07,2,1,Annex 5 to the technical specification,"1 button, its faceplate and fixing"
+1011AS,LANDINGS,"Replacement of a complete push-button box (including landing circuit board or remote unit) — 1 button, its faceplate and fixing",per level,574.62,1,1,Annex 5 to the technical specification,"1 button, its faceplate and fixing"
+1015AS,LANDINGS,"Replacement of a complete push-button box — 2 buttons, their faceplate and fixing",per level,288.94,2,1,Annex 5 to the technical specification,"2 buttons, their faceplate and fixing"
+1016AS,LANDINGS,"Replacement of a complete push-button box (including landing circuit board or remote unit) — 2 buttons, their faceplate and fixing",per level,590.31,1,1,Annex 5 to the technical specification,"2 buttons, their faceplate and fixing"
+1020AS,LANDINGS,Landing indicator replacement,per level,290.44,1,1,not applicable,like for like
+1025AS,LANDINGS,Landing indicator installation,per level,446.14,1,1,"Annex 5 to the technical specification: sheet 1015AS, partly","position or direction, incl. audible signal"
+1030AS,LANDINGS,Installation of an audible signal,each,1366.10,1,1,compliant with the accessibility orders of 26 February,signals that the doors are starting to open
+1035AS,LANDINGS,Replacement of a door closer,each,355.68,2,1,not applicable,like for like
+1040AS,LANDINGS,Replacement of a complete swing-door lock,each,207.56,2,1,Annex 5 to the technical specification,like-for-like or equivalent lock
+1045AS,LANDINGS,Replacement of a complete automatic-door lock,each,468.60,2,1,Annex 5 to the technical specification,like-for-like or equivalent lock
+1050AS,LANDINGS,Mechanical anti-intrusion system,per level,465.38,2,1,"Annex 5 to the technical specification, case B/",compliant with existing-lift safety rule RI.2
+1055AS,LANDINGS,Audible & visual anti-intrusion system,per level,846.67,2,1,"Annex 5 to the technical specification, case A/",compliant with existing-lift safety rule RI.2
+1060AS,LANDINGS,"Replacement of door hangers — carriages, rollers, counter-rollers, etc. (landings)",each,877.27,1,1,strictly identical to the existing (keeping the rating,"carriages, rollers, counter-rollers, etc."
+1065AS,LANDINGS,"Replacement of ""PUSH"" plate",per level,137.22,1,1,not applicable,like for like
+1070AS,LANDINGS,Replacement of swing-door handle,per level,130.78,1,1,not applicable,like for like
+1075AS,LANDINGS,Replacement of swing-door hinge,each,577.75,1,1,not applicable,like for like
+1080AS,LANDINGS,Replacement of glazed vision panels — < 1200 x 150,each,243.91,1,1,Annex 5 to the technical specification,< 1200 x 150
+1085AS,LANDINGS,Replacement of glazed vision panels — > 1200 x 150,each,218.96,1,1,Annex 5 to the technical specification,> 1200 x 150
+1090AS,LANDINGS,Replacement of vision-panel glazing bead,each,224.78,1,1,not applicable,like for like
+1095AS,LANDINGS,Replacement of glazed transoms,each,347.74,1,1,not applicable,with STADIP 4.4.2 laminated-glass transoms
+1100AS,LANDINGS,Replacement of a complete swing door — clear opening <= 700 mm vandal-resistance class 1 per EN81-71,each,2015.04,2,2,Annex 5 to the technical specification,clear opening <= 700 mm vandal-resistance class 1 per EN81-71
+1105AS,LANDINGS,Replacement of a complete swing door — clear opening > 700 mmm vandal-resistance class 1 per EN81-71,each,2471.34,2,2,Annex 5 to the technical specification,clear opening > 700 mmm vandal-resistance class 1 per EN81-71
+1110AS,LANDINGS,"Replacement of a complete automatic door — stainless steel doors, vandal-resistance class 1 per EN81-71, clear opening <= 700 mm",each,4572.50,2,2,Annex 5 to the technical specification,"stainless steel doors, vandal-resistance class 1 per EN81-71, clear opening <= 700 mm"
+1115AS,LANDINGS,"Replacement of a complete automatic door — painted steel doors, vandal-resistance class 1 per EN81-71, clear opening <= 700 mm",each,2530.25,2,2,Annex 5 to the technical specification,"painted steel doors, vandal-resistance class 1 per EN81-71, clear opening <= 700 mm"
+1120AS,LANDINGS,"Replacement of a complete automatic door — stainless steel doors, vandal-resistance class 1 per EN81-71, 700 mm < clear opening <= 900 mm",each,4294.90,2,2,Annex 5 to the technical specification,"stainless steel doors, vandal-resistance class 1 per EN81-71, 700 mm < clear opening <= 900 mm"
+1125AS,LANDINGS,"Replacement of a complete automatic door — painted steel doors, vandal-resistance class 1 per EN81-71, 700 mm < clear opening <= 900 mm",each,3226.60,2,2,Annex 5 to the technical specification,"painted steel doors, vandal-resistance class 1 per EN81-71, 700 mm < clear opening <= 900 mm"
+1130AS,LANDINGS,"Replacement of a complete automatic door — stainless steel doors, vandal-resistance class 1 per EN81-71, 900 mm < clear opening",each,4943.13,2,2,Annex 5 to the technical specification,"stainless steel doors, vandal-resistance class 1 per EN81-71, 900 mm < clear opening"
+1135AS,LANDINGS,"Replacement of a complete automatic door — painted steel doors, vandal-resistance class 1 per EN81-71, 900 mm < clear opening",each,6951.37,2,2,Annex 5 to the technical specification,"painted steel doors, vandal-resistance class 1 per EN81-71, 900 mm < clear opening"
+1150AS,LANDINGS,"Replacement of a swing landing door with an automatic door — stainless steel doors, vandal-resistance class 1 per EN81-71, clear opening <= 700 mm",each,4572.50,2,2,Annex 5 to the technical specification: sheet 1110AS,"stainless steel doors, vandal-resistance class 1 per EN81-71, clear opening <= 700 mm"
+1155AS,LANDINGS,"Replacement of a swing landing door with an automatic door — painted steel doors, vandal-resistance class 1 per EN81-71, clear opening <= 700 mm",each,2530.25,2,2,Annex 5 to the technical specification: sheet 1110AS,"painted steel doors, vandal-resistance class 1 per EN81-71, clear opening <= 700 mm"
+1160AS,LANDINGS,"Replacement of a swing landing door with an automatic door — stainless steel doors, vandal-resistance class 1 per EN81-71, 700 mm < clear opening <= 900 mm",each,4294.90,2,2,Annex 5 to the technical specification: sheet 1110AS,"stainless steel doors, vandal-resistance class 1 per EN81-71, 700 mm < clear opening <= 900 mm"
+1165AS,LANDINGS,"Replacement of a swing landing door with an automatic door — painted steel doors, vandal-resistance class 1 per EN81-71, 700 mm < clear opening <= 900 mm",each,3226.60,2,2,Annex 5 to the technical specification: sheet 1110AS,"painted steel doors, vandal-resistance class 1 per EN81-71, 700 mm < clear opening <= 900 mm"
+1170AS,LANDINGS,"Replacement of a swing landing door with an automatic door — stainless steel doors, vandal-resistance class 1 per EN81-71, 900 mm < clear opening",each,4943.13,2,2,Annex 5 to the technical specification: sheet 1110AS,"stainless steel doors, vandal-resistance class 1 per EN81-71, 900 mm < clear opening"
+1175AS,LANDINGS,"Replacement of a swing landing door with an automatic door — painted steel doors, vandal-resistance class 1 per EN81-71, 900 mm < clear opening",each,6951.37,2,2,Annex 5 to the technical specification: sheet 1110AS,"painted steel doors, vandal-resistance class 1 per EN81-71, 900 mm < clear opening"
+1190AS,LANDINGS,"Replacement of an automatic door panel — stainless steel doors, clear opening <= 700 mm",each,949.71,2,1,not applicable,"stainless steel doors, clear opening <= 700 mm"
+1195AS,LANDINGS,"Replacement of an automatic door panel — painted steel doors, clear opening <= 700 mm",each,1240.09,2,1,not applicable,"painted steel doors, clear opening <= 700 mm"
+1200AS,LANDINGS,"Replacement of an automatic door panel — stainless steel doors, 700 mm < clear opening <= 900 mm",each,949.71,2,1,not applicable,"stainless steel doors, 700 mm < clear opening <= 900 mm"
+1205AS,LANDINGS,"Replacement of an automatic door panel — painted steel doors, 700 mm < clear opening <= 900 mm",each,1240.09,2,1,not applicable,"painted steel doors, 700 mm < clear opening <= 900 mm"
+1210AS,LANDINGS,"Replacement of an automatic door panel — stainless steel doors, 900 mm < clear opening",each,907.56,2,1,not applicable,"stainless steel doors, 900 mm < clear opening"
+1215AS,LANDINGS,"Replacement of an automatic door panel — painted steel doors, 900 mm < clear opening",each,845.57,2,1,not applicable,"painted steel doors, 900 mm < clear opening"
+1230AS,LANDINGS,Replacement of toe-guard plate/smooth wall,m²,483.51,1,1,,like for like
+1235AS,LANDINGS,Replacement of automatic-door landing sill,each,339.95,1,1,,"stainless steel, including toe-guard plate"
+1240AS,LANDINGS,Anti-corrosion treatment of landing sill,each,350.09,1,1,not applicable,sill and brackets
+1245AS,LANDINGS,Replacement of landing key switch,each,516.12,1,1,not applicable,like for like
+1250AS,LANDINGS,Refurbishment of landing-door manual unlocking,per level,86.20,1,1,keeping the compliance already achieved,like for like
+1255AS,LANDINGS,Replacement of unlocking-hole cover,per level,86.20,1,1,not applicable,like for like
+1260AS,LANDINGS,Replacement of landing call station (with intercom) — surface-mounted,each,780.12,2,1,,surface-mounted
+1265AS,LANDINGS,Replacement of landing call station (with intercom) — flush-mounted,each,978.38,2,1,,flush-mounted
+1270AS,LANDINGS,Replacement of landing-door unlocking guide,per level,275.60,2,1,not applicable,"stainless steel, including fixings"
+1275AS,LANDINGS,Adding a counterweight to an automatic door,per door,393.52,1,1,not applicable,
+1280AS,LANDINGS,Painting an automatic door,per door,188.20,2,1,not applicable,two coats. Colour of the client's choice
+1285AS,LANDINGS,Painting a swing door,per door,244.78,2,1,not applicable,two coats. Colour of the client's choice
+2005AS,MACHINE ROOM / PULLEY ROOM,"Key box, metal cabinet",each,207.56,1,1,not applicable,installation or replacement
+2010AS,MACHINE ROOM / PULLEY ROOM,"Metal sign of any type identifying the room (""DANGER…"" - SAFETY INSTRUCTIONS -",each,96.45,1,1,not applicable,vandal-resistant sign and fixing
+2015AS,MACHINE ROOM / PULLEY ROOM,Secure and mark low points in the machine room,each,81.74,1,1,Annex 5 to the technical specification,points below 1.80 m
+2016AS,MACHINE ROOM / PULLEY ROOM,Mark the floor level changes in the machine room,each,220.67,1,1,,per machine room
+2020AS,MACHINE ROOM / PULLEY ROOM,Single access ladder to plant rooms,each,275.50,1,1,Annex 5 to the technical specification,access to machine room/pulley room
+2025AS,MACHINE ROOM / PULLEY ROOM,Caged access ladder to plant rooms,each,638.64,1,1,Annex 5 to the technical specification,access to machine room/pulley room
+2030AS,MACHINE ROOM / PULLEY ROOM,Replacement of the access-ladder lock,each,393.52,1,1,Annex 5 to the technical specification,
+2035AS,MACHINE ROOM / PULLEY ROOM,Bracket for the room access ladder,each,393.52,1,1,Annex 5 to the technical specification,lockable model
+2040AS,MACHINE ROOM / PULLEY ROOM,Ladder hook-on bar,each,130.78,1,1,Annex 5 to the technical specification,access to the machine room
+2045AS,MACHINE ROOM / PULLEY ROOM,Ladder exit handrail,each,130.78,1,1,Annex 5 to the technical specification,
+2050AS,MACHINE ROOM / PULLEY ROOM,Replacement of the room access lock,each,86.20,1,1,,
+2055AS,MACHINE ROOM / PULLEY ROOM,Replacement of the room access hatch,each,1182.58,1,1,,"balanced metal hatch, lock"
+2060AS,MACHINE ROOM / PULLEY ROOM,Strengthening of the room access hatch,each,446.14,1,1,,
+2065AS,MACHINE ROOM / PULLEY ROOM,Replacement of the room access door,each,1911.25,2,1,fire rating where applicable,metal door and its lock
+2070AS,MACHINE ROOM / PULLEY ROOM,Balancing a hatch leaf,each,377.80,1,1,Annex 5 to the technical specification,by gas strut or counterweight
+2075AS,MACHINE ROOM / PULLEY ROOM,Guard for the hatch balancing counterweight,each,420.60,1,1,"Annex 5 to the technical specification: sheet 2070AS, partly",
+2080AS,MACHINE ROOM / PULLEY ROOM,Fitting a hatch leaf stop,each,165.60,1,1,not applicable,
+2085AS,MACHINE ROOM / PULLEY ROOM,Device to stop the hatch being lifted off its hinges,each,130.78,1,1,Annex 5 to the technical specification,
+2090AS,MACHINE ROOM / PULLEY ROOM,Guardrail around the hatch,each,541.54,1,1,Annex 5 to the technical specification,
+2095AS,MACHINE ROOM / PULLEY ROOM,Replacement of door or hatch handle,each,86.20,1,1,not applicable,
+2100AS,MACHINE ROOM / PULLEY ROOM,"Variable-frequency controller, simplex, 6 levels",each,6379.90,8,1,Annex 5 to the technical specification,speed <= 1.00 m/s
+2105AS,MACHINE ROOM / PULLEY ROOM,Supplement or deduction per level — supplement to 2100AS,per level,420.60,8,,,supplement to 2100AS
+2110AS,MACHINE ROOM / PULLEY ROOM,"Variable-frequency controller, duplex, 6 levels",each,12956.78,8,1,Annex 5 to the technical specification,speed <= 1.00 m/s
+2115AS,MACHINE ROOM / PULLEY ROOM,Supplement or deduction per level — supplement to 2110AS,per level,420.60,8,,,supplement to 2110AS
+2120AS,MACHINE ROOM / PULLEY ROOM,"Variable-frequency controller, simplex, 6 levels",each,12244.00,8,1,Annex 5 to the technical specification,speed > 1.00 m/s and <= 1.6 m/s
+2125AS,MACHINE ROOM / PULLEY ROOM,Supplement or deduction per level — supplement to 2120AS,per level,420.60,8,,,supplement to 2120AS
+2130AS,MACHINE ROOM / PULLEY ROOM,"Variable-frequency controller, duplex, 6 levels",each,13809.50,8,1,Annex 5 to the technical specification,speed > 1.00 m/s and <= 1.6 m/s
+2135AS,MACHINE ROOM / PULLEY ROOM,Supplement or deduction per level — supplement to 2130AS,per level,420.60,8,,Annex 5 to the technical specification,supplement to 2130AS
+2140AS,MACHINE ROOM / PULLEY ROOM,Hydraulic lift controller — <= 1000 kg,each,13811.97,8,2,Annex 5 to the technical specification,<= 1000 kg
+2145AS,MACHINE ROOM / PULLEY ROOM,Hydraulic lift controller — > 1000 kg,each,10907.68,8,,Annex 5 to the technical specification,> 1000 kg
+2150AS,MACHINE ROOM / PULLEY ROOM,"Two-speed controller, duplex, 8 levels max",per lift,10056.36,8,2,Annex 5 to the technical specification,0.60 to <= 1.00 m/s
+2155AS,MACHINE ROOM / PULLEY ROOM,Supplement or deduction per level — supplement to 2150AS,per level,420.60,8,,,supplement to 2150AS
+2160AS,MACHINE ROOM / PULLEY ROOM,"Variable-frequency controller, duplex, 8 levels max",per lift,13809.50,8,2,Annex 5 to the technical specification,0.60 to <= 1.00 m/s
+2165AS,MACHINE ROOM / PULLEY ROOM,Supplement or deduction per level — supplement to 2160AS,per level,420.60,8,,,supplement to 2160AS
+2170AS,MACHINE ROOM / PULLEY ROOM,"Variable-frequency controller, duplex, 12 levels max",per lift,12244.00,8,2,Annex 5 to the technical specification,> 1.00 m/s and <= 1.6 m/s
+2175AS,MACHINE ROOM / PULLEY ROOM,Supplement or deduction per level — supplement to 2175AS,per level,420.60,8,,,supplement to 2175AS
+2180AS,MACHINE ROOM / PULLEY ROOM,"Variable-frequency controller, duplex, 12 levels max",per lift,16761.62,8,2,Annex 5 to the technical specification,> 1.6 m/s
+2185AS,MACHINE ROOM / PULLEY ROOM,Supplement or deduction per level — supplement to 2185AS,per level,420.60,8,,,supplement to 2185AS
+2190AS,MACHINE ROOM / PULLEY ROOM,Variable-frequency drive on the existing controller — < 8 kW,each,6588.91,3,2,"Annex 5 to the technical specification: sheet 2100AS, partly",< 8 kW
+2195AS,MACHINE ROOM / PULLEY ROOM,Variable-frequency drive on the existing controller — < 11 kW,each,4868.14,3,2,"Annex 5 to the technical specification: sheet 2100AS, partly",< 11 kW
+2200AS,MACHINE ROOM / PULLEY ROOM,Variable-frequency drive on the existing controller — > 11 kW,each,4517.97,3,2,"Annex 5 to the technical specification: sheet 2100AS, partly",> 11 kW
+2205AS,MACHINE ROOM / PULLEY ROOM,Geared motor and ropes. — rated load <= 450 kg and speed <= 1 m/s,each,6579.80,8,3,Annex 5 to the technical specification,rated load <= 450 kg and speed <= 1 m/s
+2206AS,MACHINE ROOM / PULLEY ROOM,Gearless machine and ropes — rated load <= 450 kg and speed <= 1 m/s,each,8645.78,8,2,Annex 5 to the technical specification,rated load <= 450 kg and speed <= 1 m/s
+2210AS,MACHINE ROOM / PULLEY ROOM,Geared motor and ropes. — 450 kg < rated load <= 700 kg and speed <= 1 m/s,each,13257.09,8,2,Annex 5 to the technical specification,450 kg < rated load <= 700 kg and speed <= 1 m/s
+2211AS,MACHINE ROOM / PULLEY ROOM,Gearless machine and ropes — 450 kg < rated load <= 700 kg and speed <= 1 m/s,each,11075.00,8,2,Annex 5 to the technical specification,450 kg < rated load <= 700 kg and speed <= 1 m/s
+2215AS,MACHINE ROOM / PULLEY ROOM,Geared motor and ropes. — 700 kg < rated load and speed <= 1 m/s,each,13336.67,8,2,Annex 5 to the technical specification,700 kg < rated load and speed <= 1 m/s
+2216AS,MACHINE ROOM / PULLEY ROOM,Gearless machine and ropes — 700 kg < rated load and speed <= 1 m/s,each,17064.70,8,2,Annex 5 to the technical specification,700 kg < rated load and speed <= 1 m/s
+2225AS,MACHINE ROOM / PULLEY ROOM,Geared motor and ropes. — rated load <= 450 kg and 1 m/s < speed <= 1.6 m/s,each,13362.18,8,2,Annex 5 to the technical specification,rated load <= 450 kg and 1 m/s < speed <= 1.6 m/s
+2226AS,MACHINE ROOM / PULLEY ROOM,Gearless machine and ropes — rated load <= 450 kg and 1 m/s < speed <= 1.6 m/s,each,9792.70,8,2,Annex 5 to the technical specification,rated load <= 450 kg and 1 m/s < speed <= 1.6 m/s
+2230AS,MACHINE ROOM / PULLEY ROOM,Geared motor and ropes. — 450 kg < rated load <= 700 kg and 1 m/s < speed <= 1.6 m/s,each,14355.80,8,2,Annex 5 to the technical specification,450 kg < rated load <= 700 kg and 1 m/s < speed <= 1.6 m/s
+2231AS,MACHINE ROOM / PULLEY ROOM,Gearless machine and ropes — 450 kg < rated load <= 700 kg and 1 m/s < speed <= 1.6 m/s,each,14759.81,8,2,Annex 5 to the technical specification,450 kg < rated load <= 700 kg and 1 m/s < speed <= 1.6 m/s
+2235AS,MACHINE ROOM / PULLEY ROOM,Geared motor and ropes. — 700 kg < rated load and 1 m/s < speed <= 1.6 m/s,each,14962.84,8,2,Annex 5 to the technical specification,700 kg < rated load and 1 m/s < speed <= 1.6 m/s
+2236AS,MACHINE ROOM / PULLEY ROOM,Gearless machine and ropes — 700 kg < rated load and 1 m/s < speed <= 1.6 m/s,each,16210.71,8,2,Annex 5 to the technical specification,700 kg < rated load and 1 m/s < speed <= 1.6 m/s
+2245AS,MACHINE ROOM / PULLEY ROOM,Geared motor rewinding,each,950.33,8,2,not applicable,like for like
+2255AS,MACHINE ROOM / PULLEY ROOM,Replacement of the hydraulic lift power unit — <= 1000 kg,each,9084.19,8,5,Annex 5 to the technical specification,<= 1000 kg
+2260AS,MACHINE ROOM / PULLEY ROOM,Replacement of the hydraulic lift power unit — > 1000 kg,each,12207.64,8,5,Annex 5 to the technical specification,> 1000 kg
+2265AS,MACHINE ROOM / PULLEY ROOM,Electrical emergency operation,each,581.70,2,1,"Annex 5 to the technical specification: sheet 2100AS, partly",
+2270AS,MACHINE ROOM / PULLEY ROOM,Replacement of the incoming power panel — <= 32A,each,493.05,2,1,Annex 5 to the technical specification,<= 32A
+2275AS,MACHINE ROOM / PULLEY ROOM,Replacement of the incoming power panel — > 32A,each,465.38,2,1,Annex 5 to the technical specification,> 32A
+2280AS,MACHINE ROOM / PULLEY ROOM,Lockout on the electrical panel,each,96.45,1,1,not applicable,lockable mount
+2281AS,MACHINE ROOM / PULLEY ROOM,Complete the mechanical guards on the electrical panel to make it IP2X,each,397.26,1,1,not applicable,
+2285AS,MACHINE ROOM / PULLEY ROOM,Residual-current protection on electrical panel,each,96.45,1,1,"Annex 5 to the technical specification: sheet 2270AS, partly",
+2290AS,MACHINE ROOM / PULLEY ROOM,Transparent mechanical guard on the controller,each,216.19,1,1,Annex 5 to the technical specification,incl. signs marking live parts.
+2295AS,MACHINE ROOM / PULLEY ROOM,Simplified electrical panel,each,343.24,1,1,,in the pulley room
+2300AS,MACHINE ROOM / PULLEY ROOM,"Display box ""CAR AT LEVEL""",each,339.95,1,1,not applicable,by indicator light
+2305AS,MACHINE ROOM / PULLEY ROOM,Forced mechanical extraction in the machine room,each,946.79,2,1,article AS2 of the fire-safety rules for buildings open to the public,
+2310AS,MACHINE ROOM / PULLEY ROOM,Controller interlocked to room temperature,each,622.42,1,1,,hydraulic lift
+2315AS,MACHINE ROOM / PULLEY ROOM,Drip tray under the hydraulic power unit,each,302.97,1,1,"Annex 5 to the technical specification: sheet 2255AS, partly",
+2320AS,MACHINE ROOM / PULLEY ROOM,Safety props,each,946.79,1,1,,on a hydraulic lift
+2325AS,MACHINE ROOM / PULLEY ROOM,Automatic return to the lowest level,each,1179.48,1,1,,on a hydraulic lift
+2330AS,MACHINE ROOM / PULLEY ROOM,Replacement of the overspeed governor,each,1521.61,2,1,Annex 5 to the technical specification,incl. all accessories
+2335AS,MACHINE ROOM / PULLEY ROOM,Remote-controlled governor model,each,275.60,2,1,Annex 5 to the technical specification,supplement on 2330AS
+2340AS,MACHINE ROOM / PULLEY ROOM,"Lighting, 2 LED tubes",each,500.84,1,1,Annex 5 to the technical specification,including wiring and illuminated switch
+2345AS,MACHINE ROOM / PULLEY ROOM,Replacement of switch with an illuminated model,each,130.78,1,1,Annex 5 to the technical specification,
+2355AS,MACHINE ROOM / PULLEY ROOM,Emergency lighting,each,248.87,1,1,Annex 5 to the technical specification,plant rooms and access route
+2360AS,MACHINE ROOM / PULLEY ROOM,Guarding an in-running nip,each,317.85,1,1,Annex 5 to the technical specification,complete pulley guard
+2370AS,MACHINE ROOM / PULLEY ROOM,Painting a pulley,each,137.22,1,1,not applicable,yellow paint on the rim
+2375AS,MACHINE ROOM / PULLEY ROOM,Fitting access rungs to the machine plinth,each,147.27,1,1,Annex 5 to the technical specification,per plinth
+2380AS,MACHINE ROOM / PULLEY ROOM,Fitting a restraining chain on the plinth,each,165.60,1,1,not applicable,1 m max
+2385AS,MACHINE ROOM / PULLEY ROOM,Grab handle,each,130.78,1,1,Annex 5 to the technical specification,access to the plinth
+2390AS,MACHINE ROOM / PULLEY ROOM,Plinth guardrail,each,220.41,1,1,see 2090AS,with top rail and mid rail
+2395AS,MACHINE ROOM / PULLEY ROOM,Toe boards on the guardrails,per linear metre,86.20,1,1,see 2090AS,in the machine room
+2400AS,MACHINE ROOM / PULLEY ROOM,Raising the existing plinth guardrail,per linear metre,446.14,1,1,see 2090AS,to 1.10 m
+2405AS,MACHINE ROOM / PULLEY ROOM,Lifting hook,each,216.19,1,1,Annex 5 to the technical specification,incl. testing and stamping
+2406AS,MACHINE ROOM / PULLEY ROOM,Test and stamp the existing lifting hook,each,265.74,1,1,Annex 5 to the technical specification,
+2410AS,MACHINE ROOM / PULLEY ROOM,Painting the room,m²,86.20,2,1,not applicable,"floor, walls, ceiling"
+2415AS,MACHINE ROOM / PULLEY ROOM,Enclosing a conduit,each,86.20,2,1,not applicable,per conduit in the machine room
+2420AS,MACHINE ROOM / PULLEY ROOM,Equipotential bonding,each,147.27,2,1,not applicable,between two metal parts
+2425AS,MACHINE ROOM / PULLEY ROOM,Expanded-metal partition in the machine room,m²,420.83,2,1,Annex 5 to the technical specification,"on a frame with door, lock"
+2430AS,MACHINE ROOM / PULLEY ROOM,Jack replacement,each,22648.72,8,1,Annex 5 to the technical specification,hydraulic lift
+2435AS,MACHINE ROOM / PULLEY ROOM,Stop button,each,248.00,1,1,Annex 5 to the technical specification,in the machine room or pulley room
+3005AS,IN THE SHAFT,Full-height sleeve,m²,355.68,3,1,Annex 5 to the technical specification,shaft compliant with existing-lift safety rule I.4
+3010AS,IN THE SHAFT,Device preventing access to door unlocking parts,per level,205.82,2,1,"Annex 5 to the technical specification: sheet 3005AS, partly",per existing-lift safety rule I.4
+3025AS,IN THE SHAFT,Perforated plate,m²,179.60,1,1,not applicable,to prevent access to the shaft
+3030AS,IN THE SHAFT,Mesh partition in the shaft,m²,119.78,5,1,Annex 5 to the technical specification,full height
+3035AS,IN THE SHAFT,Treatment of metal parts in the pit,each,339.95,2,1,Annex 5 to the technical specification,rust removal/ anti-rust paint
+3040AS,IN THE SHAFT,Painting the pit floor,each,356.32,3,1,not applicable,with 1 metre up the walls
+3045AS,IN THE SHAFT,Waterproofing the pit,each,678.09,10,1,not applicable,
+3050AS,IN THE SHAFT,Replacement of the pit buffers,each,738.62,5,1,,
+3055AS,IN THE SHAFT,Tension pulley contact,each,289.86,1,1,,
+3056AS,IN THE SHAFT,Tension pulley replacement,each,319.68,2,1,2330AS - Annex 5 to the technical specification,model matching the overspeed governor
+3060AS,IN THE SHAFT,Pit stop switch,each,220.41,1,1,,
+3065AS,IN THE SHAFT,Raising the buffer pedestals,each,147.27,5,1,not applicable,for a level difference of 12 cm max
+3070AS,IN THE SHAFT,Socket in the pit,each,220.41,1,1,,
+3075AS,IN THE SHAFT,Emergency call in the pit,each,272.07,1,1,"Annex 5 to the technical specification: sheet 0410AS, partly",device added to the existing remote alarm
+3080AS,IN THE SHAFT,Pit access ladder / rungs,each,500.84,1,1,Annex 5 to the technical specification,fixed
+3081AS,IN THE SHAFT,Pit access ladder,each,272.07,1,1,Annex 5 to the technical specification,"removable, hinged, incl. contact and interlock"
+3085AS,IN THE SHAFT,Grab bar for pit access,each,130.78,1,1,Annex 5 to the technical specification,
+3090AS,IN THE SHAFT,Lighting switch in the pit,each,275.60,1,1,see sheet 3100AS,
+3095AS,IN THE SHAFT,Shaft lighting switch on the car roof,each,458.92,1,1,see sheet 3100AS,
+3100AS,IN THE SHAFT,Shaft lighting with LED tubes — base 6 levels,each,590.31,3,1,Annex 5 to the technical specification,base 6 levels
+3105AS,IN THE SHAFT,"Shaft lighting with LED tubes — supplement or deduction per additional level, on code 3100AS",per level,72.83,3,1,not applicable,"supplement or deduction per additional level, on code 3100AS"
+3110AS,IN THE SHAFT,Replacement of final limit switches,each,350.09,2,1,Annex 5 to the technical specification,top or bottom
+3115AS,IN THE SHAFT,Fitting a pull-out (slack rope) switch,each,485.54,1,1,not applicable,
+3120AS,IN THE SHAFT,Landing conduits,per level,511.76,2,1,see sheet 2100AS,"in plastic trunking, per level"
+3125AS,IN THE SHAFT,Flexible wiring in the shaft,each,877.68,2,1,see sheet 2100AS,"per travelling cable - 6, 12 or 24 pairs"
+3130AS,IN THE SHAFT,Guard for deflector / reeving pulley,each,408.57,1,1,see sheet 2360 AS,
+3135AS,IN THE SHAFT,Tension pulley guard,each,346.34,1,1,see sheet 2360 AS,against falling objects
+3140AS,IN THE SHAFT,Realignment of guide rails after building movement,each,339.95,1,1,not applicable,base 6 levels
+3145AS,IN THE SHAFT,Supplement or deduction on code 3140AS per additional level,each,82.84,,,not applicable,
+3150AS,IN THE SHAFT,Replacement of counterweight guide wires,each,3058.01,8,1,see sheet 3150AS,base 6 levels
+3155AS,IN THE SHAFT,Supplement or deduction on code 3150AS per additional level,each,65.85,,,,
+3160AS,IN THE SHAFT,Cleaning a glazed shaft (inside),each,816.32,2,1,,base 6 levels
+3165AS,IN THE SHAFT,Supplement or deduction on code 3160AS per additional level,each,58.72,,,,
+4005AS,ACCESS,Flush-mounted vandal-resistant key safe,each,446.14,1,1,not applicable,1 set of keys to the client
+4006AS,ACCESS,Head for flush-mounted vandal-resistant key safe,each,450.52,1,1,not applicable,1 set of keys to the client
+4010AS,ACCESS,Roof terrace marking,per 5 m of route,474.68,1,1,not applicable,machine-room access; with posts/chains
+A-1,ASBESTOS-SPECIFIC SUPPLEMENTS,Removal and disposal of asbestos brake linings,each,2759.00,4,1,per asbestos regulations,removal and treatment included
+A-2,ASBESTOS-SPECIFIC SUPPLEMENTS,Removal and disposal of asbestos car floor — rated load <= 450 kg,each,3392.17,4,3,per asbestos regulations,rated load <= 450 kg
+A-3,ASBESTOS-SPECIFIC SUPPLEMENTS,Removal and disposal of asbestos car floor — 450 kg < rated load <= 700 kg,each,3392.17,4,3,per asbestos regulations,450 kg < rated load <= 700 kg
+A-4,ASBESTOS-SPECIFIC SUPPLEMENTS,Removal and disposal of asbestos car floor — 700 kg < rated load,each,3392.17,4,3,per asbestos regulations,700 kg < rated load
+A-5,ASBESTOS-SPECIFIC SUPPLEMENTS,Removal and disposal of asbestos car walls — rated load <= 450 kg,each,3392.17,4,1,per asbestos regulations,rated load <= 450 kg
+A-6,ASBESTOS-SPECIFIC SUPPLEMENTS,Removal and disposal of asbestos car walls — 450 kg < rated load <= 700 kg,each,3392.17,4,1,per asbestos regulations,450 kg < rated load <= 700 kg
+A-7,ASBESTOS-SPECIFIC SUPPLEMENTS,Removal and disposal of asbestos car walls — 700 kg < rated load,each,3392.17,4,1,per asbestos regulations,700 kg < rated load
+A-8,ASBESTOS-SPECIFIC SUPPLEMENTS,Removal and disposal of asbestos landing doors (landing door panels and/or frame),each,38286.87,4,1,per asbestos regulations,base 6 levels
+A-9,ASBESTOS-SPECIFIC SUPPLEMENTS,Supplement or deduction on code A-8 per additional level,each,4975.23,,,per asbestos regulations,
+A-10,ASBESTOS-SPECIFIC SUPPLEMENTS,"Supplement for landing-door replacement where the walls contain asbestos (plaster, other, skirting adhesives,",each,21226.38,4,3,per asbestos regulations,base 6 levels
+A-11,ASBESTOS-SPECIFIC SUPPLEMENTS,Supplement or deduction on code A-10 per additional level,each,3392.17,,,per asbestos regulations,
+A-12,ASBESTOS-SPECIFIC SUPPLEMENTS,"Supplement for landing-door replacement where the floors contain asbestos (adhesives, floor tiles) - base 6 levels",each,21226.38,4,3,per asbestos regulations,base 6 levels
+A-13,ASBESTOS-SPECIFIC SUPPLEMENTS,Supplement or deduction on code A-12 per additional level,each,3392.17,,,per asbestos regulations,
+A-14,ASBESTOS-SPECIFIC SUPPLEMENTS,"Supplement for landing-door replacement where the floors (adhesives, floor tiles) and the walls contain asbestos",each,28724.40,4,3,per asbestos regulations,base 6 levels
+A-15,ASBESTOS-SPECIFIC SUPPLEMENTS,Supplement or deduction on code A-14 per additional level,each,5427.97,,,per asbestos regulations,
+A-16,ASBESTOS-SPECIFIC SUPPLEMENTS,###############################################################,each,21728.60,4,3,per asbestos regulations,base 6 levels
+A-17,ASBESTOS-SPECIFIC SUPPLEMENTS,Supplement or deduction on code A-16 per additional level,each,3850.90,,,per asbestos regulations,
+A-18,ASBESTOS-SPECIFIC SUPPLEMENTS,Supplement for boxing in an asbestos conduit in the machine room (price per conduit),each,3166.91,4,3,per asbestos regulations,
+A-19,ASBESTOS-SPECIFIC SUPPLEMENTS,Indicator on an asbestos landing door,each,1598.50,4,3,per asbestos regulations and the AFNOR guide on resistance to,"supplement on price-list code 1025AS, 1 or 2 buttons"
+A-20,ASBESTOS-SPECIFIC SUPPLEMENTS,Landing push-button box on an asbestos landing door,each,1598.50,4,3,per asbestos regulations and the AFNOR guide on resistance to,supplement on price-list code 1010AS or 1015AS
+6025AS,COMPLETE LIFT REPLACEMENT,"Supply and installation of a lift, 6 levels served, speed up to 1 m/s (incl. removal of the existing lift) - simplex — 450 kg < rated load <= 700 kg vandal-resistance class 1 per EN81-71",each,89911.00,12,7,per Annex 5 to the technical specification,450 kg < rated load <= 700 kg vandal-resistance class 1 per EN81-71
+6026AS,COMPLETE LIFT REPLACEMENT,"Supply and installation of a lift, 6 levels served, speed up to 1 m/s (incl. removal of the existing lift) - simplex — 450 kg < rated load <= 700 kg speed <= 1 m/s",each,106618.00,12,7,per Annex 5 to the technical specification,450 kg < rated load <= 700 kg speed <= 1 m/s
+6027AS,COMPLETE LIFT REPLACEMENT,"Supplement or deduction per additional level served, on code 6025AS or 6026AS",each,5084.00,,,not applicable,
+6035AS,COMPLETE LIFT REPLACEMENT,"Supply and installation of a lift, 6 levels served, speed above 1 m/s and below 2 m/s (incl. removal of the existing — 450 kg < rated load <= 700 kg vandal-resistance class 1 per EN81-71",each,74263.00,12,7,per Annex 5 to the technical specification,450 kg < rated load <= 700 kg vandal-resistance class 1 per EN81-71
+6036AS,COMPLETE LIFT REPLACEMENT,"Supply and installation of a lift, 6 levels served, speed above 1 m/s and below 2 m/s (incl. removal of the existing — 450 kg < rated load <= 700 kg speed > 1m/s",each,58846.00,12,7,per Annex 5 to the technical specification,450 kg < rated load <= 700 kg speed > 1m/s
+6037AS,COMPLETE LIFT REPLACEMENT,"Supplement or deduction per additional level served, on code 6035AS or 6036AS",each,5084.00,,,not applicable,
+6045AS,COMPLETE LIFT REPLACEMENT,"Supply and installation of a lift, 6 levels served, speed up to 1 m/s (incl. removal of the existing lift) - simplex — rated load <= 450 kg vandal-resistance class 1 per EN81-71 speed <= 1 m/s",each,69710.00,12,7,per Annex 5 to the technical specification,rated load <= 450 kg vandal-resistance class 1 per EN81-71 speed <= 1 m/s
+6046AS,COMPLETE LIFT REPLACEMENT,"Supply and installation of a lift, 6 levels served, speed up to 1 m/s (incl. removal of the existing lift) - simplex — rated load <= 450 kg speed <= 1 m/s",each,96913.00,12,7,per Annex 5 to the technical specification,rated load <= 450 kg speed <= 1 m/s
+6047AS,COMPLETE LIFT REPLACEMENT,"Supplement or deduction per additional level served, on code 6045AS or 6046AS",each,7748.00,,,not applicable,
+6055AS,COMPLETE LIFT REPLACEMENT,"Supply and installation of a lift, 6 levels served, speed above 1 m/s and below 2 m/s (incl. removal of the existing — rated load <= 450 kg vandal-resistance class 1 per EN81-71 speed > 1m/s",each,111762.00,12,7,per Annex 5 to the technical specification,rated load <= 450 kg vandal-resistance class 1 per EN81-71 speed > 1m/s
+6056AS,COMPLETE LIFT REPLACEMENT,"Supply and installation of a lift, 6 levels served, speed above 1 m/s and below 2 m/s (incl. removal of the existing — rated load <= 450 kg speed > 1m/s",,94168.00,12,7,,rated load <= 450 kg speed > 1m/s
+6057AS,COMPLETE LIFT REPLACEMENT,"Supplement or deduction per additional level served, on code 6055AS or 6056AS",each,5432.00,,,not applicable,
+6065AS,COMPLETE LIFT REPLACEMENT,"Supply and installation of a lift, 8 levels served, speed up to 1 m/s (incl. removal of the existing lift) - simplex — 700 kg < rated load vandal-resistance class 1 per EN81-71",each,126893.00,12,7,per Annex 5 to the technical specification,700 kg < rated load vandal-resistance class 1 per EN81-71
+6066AS,COMPLETE LIFT REPLACEMENT,"Supply and installation of a lift, 8 levels served, speed up to 1 m/s (incl. removal of the existing lift) - simplex — 700 kg < rated load speed <= 1 m/s (complete lift replacement)",each,121526.00,12,7,per Annex 5 to the technical specification,700 kg < rated load speed <= 1 m/s
+6067AS,COMPLETE LIFT REPLACEMENT,"Supplement or deduction per additional level served, on code 6065AS or 6066AS",each,5899.00,,,not applicable,
+6075AS,COMPLETE LIFT REPLACEMENT,"Supply and installation of a lift, 8 levels served, speed above 1 m/s and below 2 m/s (incl. removal of the existing",each,112066.00,12,7,per Annex 5 to the technical specification,700 kg < rated load vandal-resistance class 1 per EN81-71
+6076AS,COMPLETE LIFT REPLACEMENT,"Supply and installation of a lift, 8 levels served, speed up to 1 m/s (incl. removal of the existing lift) - simplex — 700 kg < rated load speed <= 1 m/s (complete lift replacement)",each,74800.00,12,7,per Annex 5 to the technical specification,700 kg < rated load speed <= 1 m/s
+6077AS,COMPLETE LIFT REPLACEMENT,"Supplement or deduction per additional level served, on code 6075AS or 6076AS",each,5899.00,,,not applicable,
+6190AS,COMPLETE LIFT REPLACEMENT,Opening walls to serve levels not currently served,per level,2200.00,4,1,,
+6200AS,COMPLETE LIFT REPLACEMENT,Supplement for reduced headroom,each,1470.00,,,not applicable,
+6205AS,COMPLETE LIFT REPLACEMENT,Supplement for reduced pit depth,each,1470.00,,,not applicable,
+6210AS,COMPLETE LIFT REPLACEMENT,Supplement for a lift serving even or odd floors only,each,834.00,,,not applicable,
+7005AS,LIFT MODERNISATION WITHOUT LANDING DOORS,"Modernisation of a lift, 6 levels served, speed up to 1 m/s (incl. removal of existing components) - simplex — rated load <= 450 kg vandal-resistance class 1 per EN81-71 speed <= 1 m/s (lift modernisation without landing doors)",each,26033.00,12,7,per Annex 5 to the technical specification,rated load <= 450 kg vandal-resistance class 1 per EN81-71 speed <= 1 m/s
+7006AS,LIFT MODERNISATION WITHOUT LANDING DOORS,"Modernisation of a lift, 6 levels served, speed up to 1 m/s (incl. removal of existing components) - simplex — rated load <= 450 kg speed <= 1 m/s (lift modernisation without landing doors)",each,28611.00,12,7,per Annex 5 to the technical specification,rated load <= 450 kg speed <= 1 m/s
+7015AS,LIFT MODERNISATION WITHOUT LANDING DOORS,"Modernisation of a lift, 6 levels served, speed up to 1 m/s (incl. removal of existing components) - simplex — rated load <= 450 kg vandal-resistance class 1 per EN81-71 speed > 1 m/s (lift modernisation without landing doors)",each,43366.00,12,7,per Annex 5 to the technical specification,rated load <= 450 kg vandal-resistance class 1 per EN81-71 speed > 1 m/s
+7016AS,LIFT MODERNISATION WITHOUT LANDING DOORS,"Modernisation of a lift, 6 levels served, speed up to 1 m/s (incl. removal of existing components) - simplex — rated load <= 450 kg speed > 1 m/s (lift modernisation without landing doors)",each,43523.00,12,7,per Annex 5 to the technical specification,rated load <= 450 kg speed > 1 m/s
+7025AS,LIFT MODERNISATION WITHOUT LANDING DOORS,"Modernisation of a lift, 6 levels served, speed up to 1 m/s (incl. removal of existing components) - simplex — 450 kg < rated load <= 700 kg vandal-resistance class 1 per EN81-71 speed <= 1 m/s (lift modernisation without landing doors)",each,44918.00,12,7,per Annex 5 to the technical specification,450 kg < rated load <= 700 kg vandal-resistance class 1 per EN81-71 speed <= 1 m/s
+7026AS,LIFT MODERNISATION WITHOUT LANDING DOORS,"Modernisation of a lift, 6 levels served, speed up to 1 m/s (incl. removal of existing components) - simplex — 450 kg < rated load <= 700 kg speed <= 1 m/s (lift modernisation without landing doors)",each,27901.00,12,7,per Annex 5 to the technical specification,450 kg < rated load <= 700 kg speed <= 1 m/s
+7035AS,LIFT MODERNISATION WITHOUT LANDING DOORS,"Modernisation of a lift, 6 levels served, speed up to 1 m/s (incl. removal of existing components) - simplex — 450 kg < rated load <= 700 kg vandal-resistance class 1 per EN81-71 speed > 1 m/s (lift modernisation without landing doors)",each,44918.00,12,7,per Annex 5 to the technical specification,450 kg < rated load <= 700 kg vandal-resistance class 1 per EN81-71 speed > 1 m/s
+7036AS,LIFT MODERNISATION WITHOUT LANDING DOORS,"Modernisation of a lift, 6 levels served, speed up to 1 m/s (incl. removal of existing components) - simplex — 450 kg < rated load <= 700 kg speed > 1 m/s (lift modernisation without landing doors)",each,27901.00,12,7,per Annex 5 to the technical specification,450 kg < rated load <= 700 kg speed > 1 m/s
+7045AS,LIFT MODERNISATION WITHOUT LANDING DOORS,"Modernisation of a lift, 6 levels served, speed up to 1 m/s (incl. removal of existing components) - simplex — rated load > 700 kg vandal-resistance class 1 per EN81-71 speed <= 1 m/s (lift modernisation without landing doors)",each,39053.00,12,7,per Annex 5 to the technical specification,rated load > 700 kg vandal-resistance class 1 per EN81-71 speed <= 1 m/s
+7046AS,LIFT MODERNISATION WITHOUT LANDING DOORS,"Modernisation of a lift, 6 levels served, speed up to 1 m/s (incl. removal of existing components) - simplex — rated load > 700 kg speed <= 1 m/s (lift modernisation without landing doors)",each,35498.00,12,7,per Annex 5 to the technical specification,rated load > 700 kg speed <= 1 m/s
+7055AS,LIFT MODERNISATION WITHOUT LANDING DOORS,"Modernisation of a lift, 6 levels served, speed up to 1 m/s (incl. removal of existing components) - simplex — rated load > 700 kg vandal-resistance class 1 per EN81-71 speed > 1 m/s (lift modernisation without landing doors)",each,39053.00,12,7,per Annex 5 to the technical specification,rated load > 700 kg vandal-resistance class 1 per EN81-71 speed > 1 m/s
+7056AS,LIFT MODERNISATION WITHOUT LANDING DOORS,"Modernisation of a lift, 6 levels served, speed up to 1 m/s (incl. removal of existing components) - simplex — rated load > 700 kg speed > 1 m/s (lift modernisation without landing doors)",each,35498.00,12,7,per Annex 5 to the technical specification,rated load > 700 kg speed > 1 m/s
+7070AS,LIFT MODERNISATION WITHOUT LANDING DOORS,"Supplement or deduction per additional level served, on codes 7005AS to 7056AS",each,524.00,,,not applicable,
+7080AS,LIFT MODERNISATION WITHOUT LANDING DOORS,Supplement on codes 7005AS to 7056AS for laminate car lining per description 0135AS — rated load <= 450 kg,each,5124.77,4,1,per Annex 5 to the technical specification - description 0135AS,rated load <= 450 kg
+7081AS,LIFT MODERNISATION WITHOUT LANDING DOORS,Supplement on codes 7005AS to 7056AS for laminate car lining per description 0135AS — 450 kg < rated load <= 700 kg,each,6684.75,4,1,per Annex 5 to the technical specification - description 0135AS,450 kg < rated load <= 700 kg
+7082AS,LIFT MODERNISATION WITHOUT LANDING DOORS,Supplement on codes 7005AS to 7056AS for laminate car lining per description 0135AS — rated load > 700 kg,each,4364.21,4,1,per Annex 5 to the technical specification - description 0135AS,rated load > 700 kg
+7085AS,LIFT MODERNISATION WITHOUT LANDING DOORS,Supplement on codes 7005AS to 7056AS for stainless steel car lining per description 0135AS — rated load <= 450 kg,each,3570.96,4,1,per Annex 5 to the technical specification - description 0135AS,rated load <= 450 kg
+7086AS,LIFT MODERNISATION WITHOUT LANDING DOORS,Supplement on codes 7005AS to 7056AS for stainless steel car lining per description 0135AS — 450 kg < rated load <= 700 kg,each,4345.10,4,1,per Annex 5 to the technical specification - description 0135AS,450 kg < rated load <= 700 kg
+7087AS,LIFT MODERNISATION WITHOUT LANDING DOORS,Supplement on codes 7005AS to 7056AS for stainless steel car lining per description 0135AS — rated load > 700 kg,each,5817.10,4,1,per Annex 5 to the technical specification - description 0135AS,rated load > 700 kg
+8005AS,LIFT MODERNISATION WITH SWING LANDING DOORS,"Modernisation of a lift, 6 levels served, speed up to 1 m/s (incl. removal of existing components) - simplex — rated load <= 450 kg vandal-resistance class 1 per EN81-71 speed <= 1 m/s (lift modernisation with swing landing doors)",each,37326.67,12,7,per Annex 5 to the technical specification,rated load <= 450 kg vandal-resistance class 1 per EN81-71 speed <= 1 m/s
+8006AS,LIFT MODERNISATION WITH SWING LANDING DOORS,"Modernisation of a lift, 6 levels served, speed up to 1 m/s (incl. removal of existing components) - simplex — rated load <= 450 kg speed <= 1 m/s (lift modernisation with swing landing doors)",each,42866.05,12,7,per Annex 5 to the technical specification,rated load <= 450 kg speed <= 1 m/s
+8015AS,LIFT MODERNISATION WITH SWING LANDING DOORS,"Modernisation of a lift, 6 levels served, speed up to 1 m/s (incl. removal of existing components) - simplex — rated load <= 450 kg vandal-resistance class 1 per EN81-71 speed > 1 m/s (lift modernisation with swing landing doors)",each,62729.43,12,7,per Annex 5 to the technical specification,rated load <= 450 kg vandal-resistance class 1 per EN81-71 speed > 1 m/s
+8016AS,LIFT MODERNISATION WITH SWING LANDING DOORS,"Modernisation of a lift, 6 levels served, speed up to 1 m/s (incl. removal of existing components) - simplex — rated load <= 450 kg speed > 1 m/s (lift modernisation with swing landing doors)",each,64501.55,12,7,per Annex 5 to the technical specification,rated load <= 450 kg speed > 1 m/s
+8025AS,LIFT MODERNISATION WITH SWING LANDING DOORS,"Modernisation of a lift, 6 levels served, speed up to 1 m/s (incl. removal of existing components) - simplex — 450 kg < rated load <= 700 kg vandal-resistance class 1 per EN81-71 speed <= 1 m/s (lift modernisation with swing landing doors)",each,62729.43,12,7,per Annex 5 to the technical specification,450 kg < rated load <= 700 kg vandal-resistance class 1 per EN81-71 speed <= 1 m/s
+8026AS,LIFT MODERNISATION WITH SWING LANDING DOORS,"Modernisation of a lift, 6 levels served, speed up to 1 m/s (incl. removal of existing components) - simplex — 450 kg < rated load <= 700 kg speed <= 1 m/s (lift modernisation with swing landing doors)",each,64501.55,12,7,per Annex 5 to the technical specification,450 kg < rated load <= 700 kg speed <= 1 m/s
+8035AS,LIFT MODERNISATION WITH SWING LANDING DOORS,"Modernisation of a lift, 6 levels served, speed up to 1 m/s (incl. removal of existing components) - simplex — 450 kg < rated load <= 700 kg vandal-resistance class 1 per EN81-71 speed > 1 m/s (lift modernisation with swing landing doors)",each,68507.94,12,7,per Annex 5 to the technical specification,450 kg < rated load <= 700 kg vandal-resistance class 1 per EN81-71 speed > 1 m/s
+8036AS,LIFT MODERNISATION WITH SWING LANDING DOORS,"Modernisation of a lift, 6 levels served, speed up to 1 m/s (incl. removal of existing components) - simplex — 450 kg < rated load <= 700 kg speed > 1 m/s (lift modernisation with swing landing doors)",each,68967.32,12,7,per Annex 5 to the technical specification,450 kg < rated load <= 700 kg speed > 1 m/s
+8045AS,LIFT MODERNISATION WITH SWING LANDING DOORS,"Modernisation of a lift, 6 levels served, speed up to 1 m/s (incl. removal of existing components) - simplex — rated load > 700 kg vandal-resistance class 1 per EN81-71 speed <= 1 m/s (lift modernisation with swing landing doors)",each,68507.94,12,7,per Annex 5 to the technical specification,rated load > 700 kg vandal-resistance class 1 per EN81-71 speed <= 1 m/s
+8046AS,LIFT MODERNISATION WITH SWING LANDING DOORS,"Modernisation of a lift, 6 levels served, speed up to 1 m/s (incl. removal of existing components) - simplex — rated load > 700 kg speed <= 1 m/s (lift modernisation with swing landing doors)",each,68967.32,12,7,per Annex 5 to the technical specification,rated load > 700 kg speed <= 1 m/s
+8055AS,LIFT MODERNISATION WITH SWING LANDING DOORS,"Modernisation of a lift, 6 levels served, speed up to 1 m/s (incl. removal of existing components) - simplex — rated load > 700 kg vandal-resistance class 1 per EN81-71 speed > 1 m/s (lift modernisation with swing landing doors)",each,68507.94,12,7,per Annex 5 to the technical specification,rated load > 700 kg vandal-resistance class 1 per EN81-71 speed > 1 m/s
+8056AS,LIFT MODERNISATION WITH SWING LANDING DOORS,"Modernisation of a lift, 6 levels served, speed up to 1 m/s (incl. removal of existing components) - simplex — rated load > 700 kg speed > 1 m/s (lift modernisation with swing landing doors)",each,68967.32,12,7,per Annex 5 to the technical specification,rated load > 700 kg speed > 1 m/s
+8070AS,LIFT MODERNISATION WITH SWING LANDING DOORS,"Supplement or deduction per additional level served, on codes 8005AS to 8056AS",each,3531.00,,,not applicable,
+8080AS,LIFT MODERNISATION WITH SWING LANDING DOORS,Supplement on codes 8005AS to 8056AS for laminate car lining per description 0135AS — rated load <= 450 kg,each,5124.77,4,1,per Annex 5 to the technical specification - description 0135AS,rated load <= 450 kg
+8081AS,LIFT MODERNISATION WITH SWING LANDING DOORS,Supplement on codes 8005AS to 8056AS for laminate car lining per description 0135AS — 450 kg < rated load <= 700 kg,each,6684.75,4,1,per Annex 5 to the technical specification - description 0135AS,450 kg < rated load <= 700 kg
+8082AS,LIFT MODERNISATION WITH SWING LANDING DOORS,Supplement on codes 8005AS to 8056AS for laminate car lining per description 0135AS — rated load > 700 kg,each,4364.21,4,1,per Annex 5 to the technical specification - description 0135AS,rated load > 700 kg
+8085AS,LIFT MODERNISATION WITH SWING LANDING DOORS,Supplement on codes 8005AS to 8056AS for stainless steel car lining per description 0135AS — rated load <= 450 kg,each,3570.96,4,1,per Annex 5 to the technical specification - description 0135AS,rated load <= 450 kg
+8086AS,LIFT MODERNISATION WITH SWING LANDING DOORS,Supplement on codes 8005AS to 8056AS for stainless steel car lining per description 0135AS — 450 kg < rated load <= 700 kg,each,4345.10,4,1,per Annex 5 to the technical specification - description 0135AS,450 kg < rated load <= 700 kg
+8087AS,LIFT MODERNISATION WITH SWING LANDING DOORS,Supplement on codes 8005AS to 8056AS for stainless steel car lining per description 0135AS — rated load > 700 kg,each,5817.10,4,1,per Annex 5 to the technical specification - description 0135AS,rated load > 700 kg
+9005AS,LIFT MODERNISATION WITH AUTOMATIC LANDING DOORS,"Modernisation of a lift, 6 levels served, speed up to 1 m/s (incl. removal of existing components) - simplex — rated load <= 450 kg vandal-resistance class 1 per EN81-71 speed <= 1 m/s (lift modernisation with automatic landing doors)",each,63776.43,12,7,per Annex 5 to the technical specification,rated load <= 450 kg vandal-resistance class 1 per EN81-71 speed <= 1 m/s
+9006AS,LIFT MODERNISATION WITH AUTOMATIC LANDING DOORS,"Modernisation of a lift, 6 levels served, speed up to 1 m/s (incl. removal of existing components) - simplex — rated load <= 450 kg speed <= 1 m/s (lift modernisation with automatic landing doors)",each,48155.42,12,7,per Annex 5 to the technical specification,rated load <= 450 kg speed <= 1 m/s
+9015AS,LIFT MODERNISATION WITH AUTOMATIC LANDING DOORS,"Modernisation of a lift, 6 levels served, speed up to 1 m/s (incl. removal of existing components) - simplex — rated load <= 450 kg vandal-resistance class 1 per EN81-71 speed > 1 m/s (lift modernisation with automatic landing doors)",each,43931.44,12,7,per Annex 5 to the technical specification,rated load <= 450 kg vandal-resistance class 1 per EN81-71 speed > 1 m/s
+9016AS,LIFT MODERNISATION WITH AUTOMATIC LANDING DOORS,"Modernisation of a lift, 6 levels served, speed up to 1 m/s (incl. removal of existing components) - simplex — rated load <= 450 kg speed > 1 m/s (lift modernisation with automatic landing doors)",each,45679.14,12,7,per Annex 5 to the technical specification,rated load <= 450 kg speed > 1 m/s
+9025AS,LIFT MODERNISATION WITH AUTOMATIC LANDING DOORS,"Modernisation of a lift, 6 levels served, speed up to 1 m/s (incl. removal of existing components) - simplex — 450 kg < rated load <= 700 kg vandal-resistance class 1 per EN81-71 speed <= 1 m/s (lift modernisation with automatic landing doors)",each,67829.89,12,7,per Annex 5 to the technical specification,450 kg < rated load <= 700 kg vandal-resistance class 1 per EN81-71 speed <= 1 m/s
+9026AS,LIFT MODERNISATION WITH AUTOMATIC LANDING DOORS,"Modernisation of a lift, 6 levels served, speed up to 1 m/s (incl. removal of existing components) - simplex — 450 kg < rated load <= 700 kg speed <= 1 m/s (lift modernisation with automatic landing doors)",each,52150.00,12,7,per Annex 5 to the technical specification,450 kg < rated load <= 700 kg speed <= 1 m/s
+9035AS,LIFT MODERNISATION WITH AUTOMATIC LANDING DOORS,"Modernisation of a lift, 6 levels served, speed up to 1 m/s (incl. removal of existing components) - simplex — 450 kg < rated load <= 700 kg vandal-resistance class 1 per EN81-71 speed > 1 m/s (lift modernisation with automatic landing doors)",each,67829.89,12,7,per Annex 5 to the technical specification,450 kg < rated load <= 700 kg vandal-resistance class 1 per EN81-71 speed > 1 m/s
+9036AS,LIFT MODERNISATION WITH AUTOMATIC LANDING DOORS,"Modernisation of a lift, 6 levels served, speed up to 1 m/s (incl. removal of existing components) - simplex — 450 kg < rated load <= 700 kg speed > 1 m/s (lift modernisation with automatic landing doors)",each,52150.00,12,7,per Annex 5 to the technical specification,450 kg < rated load <= 700 kg speed > 1 m/s
+9045AS,LIFT MODERNISATION WITH AUTOMATIC LANDING DOORS,"Modernisation of a lift, 6 levels served, speed up to 1 m/s (incl. removal of existing components) - simplex — rated load > 700 kg vandal-resistance class 1 per EN81-71 speed <= 1 m/s (lift modernisation with automatic landing doors)",each,40250.82,12,7,per Annex 5 to the technical specification,rated load > 700 kg vandal-resistance class 1 per EN81-71 speed <= 1 m/s
+9046AS,LIFT MODERNISATION WITH AUTOMATIC LANDING DOORS,"Modernisation of a lift, 6 levels served, speed up to 1 m/s (incl. removal of existing components) - simplex — rated load > 700 kg speed <= 1 m/s (lift modernisation with automatic landing doors)",each,52445.45,12,7,per Annex 5 to the technical specification,rated load > 700 kg speed <= 1 m/s
+9055AS,LIFT MODERNISATION WITH AUTOMATIC LANDING DOORS,"Modernisation of a lift, 6 levels served, speed up to 1 m/s (incl. removal of existing components) - simplex — rated load > 700 kg vandal-resistance class 1 per EN81-71 speed > 1 m/s (lift modernisation with automatic landing doors)",each,40250.82,12,7,per Annex 5 to the technical specification,rated load > 700 kg vandal-resistance class 1 per EN81-71 speed > 1 m/s
+9056AS,LIFT MODERNISATION WITH AUTOMATIC LANDING DOORS,"Modernisation of a lift, 6 levels served, speed up to 1 m/s (incl. removal of existing components) - simplex — rated load > 700 kg speed > 1 m/s (lift modernisation with automatic landing doors)",each,52445.45,12,7,per Annex 5 to the technical specification,rated load > 700 kg speed > 1 m/s
+9070AS,LIFT MODERNISATION WITH AUTOMATIC LANDING DOORS,"Supplement or deduction per additional level served, on codes 9005AS to 9056AS",each,4621.00,,,not applicable,
+9080AS,LIFT MODERNISATION WITH AUTOMATIC LANDING DOORS,Supplement on codes 9005AS to 9056AS for laminate car lining per description 0135AS — rated load <= 450 kg,each,5124.77,4,1,per Annex 5 to the technical specification - description 0135AS,rated load <= 450 kg
+9081AS,LIFT MODERNISATION WITH AUTOMATIC LANDING DOORS,Supplement on codes 9005AS to 9056AS for laminate car lining per description 0135AS — 450 kg < rated load <= 700 kg,each,6684.75,4,1,per Annex 5 to the technical specification - description 0135AS,450 kg < rated load <= 700 kg
+9082AS,LIFT MODERNISATION WITH AUTOMATIC LANDING DOORS,Supplement on codes 9005AS to 9056AS for laminate car lining per description 0135AS — rated load > 700 kg,each,4364.21,4,1,per Annex 5 to the technical specification - description 0135AS,rated load > 700 kg
+9085AS,LIFT MODERNISATION WITH AUTOMATIC LANDING DOORS,Supplement on codes 9005AS to 9056AS for stainless steel car lining per description 0135AS — rated load <= 450 kg,each,3570.96,4,1,per Annex 5 to the technical specification - description 0135AS,rated load <= 450 kg
+9086AS,LIFT MODERNISATION WITH AUTOMATIC LANDING DOORS,Supplement on codes 9005AS to 9056AS for stainless steel car lining per description 0135AS — 450 kg < rated load <= 700 kg,each,4345.10,4,1,per Annex 5 to the technical specification - description 0135AS,450 kg < rated load <= 700 kg
+9087AS,LIFT MODERNISATION WITH AUTOMATIC LANDING DOORS,Supplement on codes 9005AS to 9056AS for stainless steel car lining per description 0135AS — rated load > 700 kg,each,5817.10,4,1,per Annex 5 to the technical specification - description 0135AS,rated load > 700 kg

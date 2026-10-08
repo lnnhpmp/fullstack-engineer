@@ -1,0 +1,82 @@
+no,description,uom,office_hours_sgd,after_office_hours_sgd,sat_pm_sun_ph_sgd
+1,ARD Battery 65AH - 4 x 12 AH,Per Set,588.00,705.00,705.00
+2,ARD Battery 65AH - 4 x 28 AH,Per Set,588.00,705.00,705.00
+3,ARD Battery 65AH - 3 x 100 AH,Per Set,849.00,1019.00,1019.00
+4,ARD Battery 65AH - 3 x 43 AH,Per Set,849.00,1019.00,1019.00
+5,ARD Battery 65AH - 3 x 65 AH,Per Set,849.00,1019.00,1019.00
+6,Brake unit without switch,Per Pc,1437.00,1763.00,1763.00
+7,Car guide shoe,Per Pc,235.00,313.00,313.00
+8,Car top battery,Per Pc,78.00,157.00,157.00
+9,Car top fan (cross flow),Per Pc,327.00,457.00,457.00
+10,Comb Plate,Per Pc,274.00,327.00,327.00
+11,Control current transformer,Per Pc,392.00,483.00,483.00
+12,COP button,Per Pc,65.00,104.00,104.00
+13,Counter Roller,Per Pc,1110.00,1437.00,1437.00
+14,Counterweight main sheave,Per Pc,4311.00,5486.00,5486.00
+15,Curtain of light,Per Pc,1894.00,2221.00,2221.00
+16,Door Contact (Male / Female),Per Pc,157.00,196.00,196.00
+17,Door hangar roller,Per Pc,157.00,196.00,196.00
+18,Door header (stainless steel),Per Landing,3266.00,3919.00,3919.00
+19,Door Lock,Per Pc,522.00,627.00,627.00
+20,Door Motor,Per Pc,980.00,1176.00,1176.00
+21,Door Motor Belt,Per Pc,196.00,235.00,235.00
+22,Door track,Per Door,2612.00,3135.00,3135.00
+23,Drive module,Per Pc,1567.00,1959.00,1959.00
+24,EBOPS / UPS device with battery,Per Pc,1633.00,1959.00,1959.00
+25,EBOPS' battery only,Per Pc,588.00,705.00,705.00
+26,Electronic Box,Per Pc,1110.00,1372.00,1372.00
+27,Encoder,Per Pc,784.00,980.00,980.00
+28,Escalator Glass Panel (5.8m rise),Per Pc,3135.00,3788.00,3788.00
+29,Escalator Glass Panel (Curve/Straight),Per Pc,3657.00,4441.00,4441.00
+30,Escalator Handrail,Per No.,4311.00,6401.00,6401.00
+31,Escalator LED Lighting,Per Pc,104.00,157.00,157.00
+32,Escalator limit safety switch,Per Pc,157.00,196.00,196.00
+33,"Escalator limit swith, chain tension",Per Pc,157.00,196.00,196.00
+34,Escalator Main Board,Per Pc,1437.00,1959.00,1959.00
+35,Escalator Photocell / Radar,Per Pc,522.00,627.00,627.00
+36,Escalator Relay terminal,Per Pc,118.00,157.00,157.00
+37,"Escalator safety brush, both sides",Per Pc,235.00,327.00,327.00
+38,Escalator Step Chain,Per Escalator,20247.00,23774.00,23774.00
+39,Escalator Step Comb,Per Pc,274.00,327.00,327.00
+40,Escalator Step Connector,Per Pc,196.00,235.00,235.00
+41,Escalator Step Roller,Per Pc,52.00,72.00,72.00
+42,Escalator Steps,Per Pc,1176.00,1633.00,1633.00
+43,Escalator Transformer,Per Pc,392.00,483.00,483.00
+44,Fire lift switch faceplate,Per Pc,157.00,196.00,196.00
+45,Fire lift switch glass cover,Per Pc,52.00,78.00,78.00
+46,Hall indicator,Per Pc,366.00,457.00,457.00
+47,Hangar Roller,Per Pc,157.00,196.00,196.00
+48,Inspection Box - Elevator,Per Pc,849.00,1045.00,1045.00
+49,Landing button,Per Pc,65.00,104.00,104.00
+50,Landing door architrave,Per Door,2351.00,3135.00,3135.00
+51,Landing Door Jamb,Per Door,2874.00,3919.00,3919.00
+52,Landing Sill,Per Pc,3657.00,4572.00,4572.00
+53,Main sheave,Per Pc,4964.00,6139.00,6139.00
+54,Overspeed governor,Per Pc,1698.00,2155.00,2155.00
+55,Repair EBOPS Inverter Board,Per Pc,1045.00,1254.00,1254.00
+56,Repair EBOPS Main PCB,Per Pc,1045.00,1254.00,1254.00
+57,Sliding Shoe,Per Pc,235.00,313.00,313.00
+58,Synchronization Rope (Goods Lifts),Per Pc,196.00,235.00,235.00
+59,Synchronization Rope (Passenger lift),Per Pc,235.00,274.00,274.00
+60,Tachometer,Per Pc,196.00,235.00,235.00
+61,Tier,Per Pc,196.00,235.00,235.00
+62,Transformer,Per Pc,392.00,483.00,483.00
+63,"Travelator safety brush, both sides",Per Pc,327.00,379.00,379.00
+64,UPS Complete Set,Per Pc,1633.00,1959.00,1959.00
+65,Standby technician,Per Man-hr,111.00,167.00,222.00
+66,Step upward thrust safety switches,Per Set,1959.00,2939.00,2939.00
+67,Lift No Load Testing,Per test,392.00,392.00,392.00
+68,Lift Full Load Testing (for lift below 3000kg),Per test,653.00,653.00,653.00
+69,Lift Full Load Testing (for lift 3000kg and above),Per test,1045.00,1045.00,1045.00
+70,Lift AE/SPE Endorsement for No Load Test,Per test,457.00,457.00,457.00
+71,Lift AE/SPE Endorsement for Full Load Test,Per test,588.00,588.00,588.00
+72,Escalator/Travelator No Load Test,Per test,457.00,457.00,457.00
+73,Escalator/Travelator AE/SPE for No Load Test,Per test,457.00,457.00,457.00
+74,Main rope replacement (≥ 20 storey) - for Central Plaza high rise lifts,Per lift,15414.00,20639.00,20639.00
+75,Main rope replacement (< 20 storey) - other lifts,Per lift,8882.00,11103.00,11103.00
+76,Sheave replacement (≥ 20 storey) - for Central Plaza high rise lifts,Per lift,7576.00,9797.00,9797.00
+77,Sheave replacement (< 20 storey) - other lifts,Per lift,4441.00,5878.00,5878.00
+78,Machine overhaul,Per lift,5878.00,7576.00,7576.00
+79,Escalator handrail sheave replacement,Per escalator,2874.00,3657.00,3657.00
+80,Escalator motor coupling replacement,Per escalator,2351.00,3070.00,3070.00
+81,Escalator step track repair,Per job,1763.00,2221.00,2221.00

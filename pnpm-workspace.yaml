@@ -1,0 +1,10 @@
+packages:
+  - backend
+  - admin
+  - salesforce
+
+# None of these packages needs its install script here.
+allowBuilds:
+  '@parcel/watcher': false
+  unrs-resolver: false
+  esbuild: true

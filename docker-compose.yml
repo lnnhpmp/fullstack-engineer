@@ -1,0 +1,9 @@
+# Alternative to `devenv up` if you prefer Docker for Postgres.
+services:
+  postgres:
+    image: postgres:16
+    environment:
+      POSTGRES_USER: wemaintain
+      POSTGRES_PASSWORD: wemaintain
+      POSTGRES_DB: wemaintain
+    ports: ["5432:5432"]
