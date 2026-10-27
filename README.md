@@ -36,8 +36,7 @@ next assignment, as it landed on your Slack:
 > We ask our Software Engineers to "shape" (inspired by [shape up](https://basecamp.com/shapeup))
 > Appetite is about two weeks of build for one engineer.
 > Please take some time, shape it, and then let's review your shaping together
-> for 60 minutes. Prototype if it helps you think, it's not
-> required.
+> for 60 minutes. Shape it the way you'd shape it here.
 
 That meeting is the interview. Prepare for it the way you would if this were
 your job. Reach out before with any questions, exactly as you would with
@@ -97,11 +96,33 @@ Tables are grouped by schema: `workorders`, `contracts`, `users`, `buildings`,
    `Accepted`: the admin follows, and the backend logs the acceptance email it
    would send.
 
+## How we shape here
+
+A few habits from the team, for context:
+
+- We start from the screen, not the schema. Before writing anything down, we
+  build a throwaway frontend on fake data and click through it, alone first,
+  then with a CSM. It costs an afternoon with an agent, and it settles more
+  arguments than a document.
+- Only then do we wire it to the real backend and data. The data model we
+  write down is the one the toy proved it needed, and it has to hold in
+  production, not just in the toy.
+- The write-up comes last and stays short: what we decided, what we left out,
+  and why.
+
+The `admin/` and `salesforce/` toys in this repository were built the same way.
+
 ## About the meeting
+
+Before we meet, share a repository with your shaping in it (a private GitHub
+repo with access for `Superd22` is perfect). We go through it first, and we
+book the 60 minutes once we have. If we don't think it's ready for the
+conversation, we'll tell you why.
 
 You drive the first half and present. We spend the second half on the
 decisions you made and the ones you did not. We are interested in how deep
 you went, what you looked for, whether the data model holds, and how you work
 with a non-technical stakeholder. Use any tool you like, AI included; we do.
+We'd rather click through something than read about it.
 
 Any questions before then, feel free to reach out.
