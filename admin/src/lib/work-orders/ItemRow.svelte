@@ -8,8 +8,10 @@
 		currency,
 		editable,
 		priceEditable,
+		onlist,
 		onquantity,
 		oneditprice,
+		onpickprice,
 		onassignpart,
 		onremove
 	}: {
@@ -17,8 +19,10 @@
 		currency: string;
 		editable: boolean;
 		priceEditable: boolean;
+		onlist: string | null;
 		onquantity: (quantity: number) => void;
 		oneditprice: () => void;
+		onpickprice: () => void;
 		onassignpart: () => void;
 		onremove: () => void;
 	} = $props();
@@ -40,6 +44,7 @@
 			{/if}
 			{#if item.type === 'MAN_HOUR'}<Pill>Labour</Pill>{/if}
 			{#if item.type === 'INSTALLATION'}<Pill>Installation</Pill>{/if}
+			{#if onlist}<Pill theme="success">On list</Pill>{/if}
 		</div>
 		<div class="label">{label}</div>
 		{#if item.type === 'EXTERNAL_PART' && item.part}<div class="grey">{item.part.name}</div>{/if}
@@ -62,6 +67,7 @@
 				</div>
 			{/if}
 			<button class="link" disabled={!priceEditable} onclick={oneditprice}>Edit price</button>
+			<button class="link" disabled={!priceEditable} onclick={onpickprice}>Pick from price list</button>
 			{#if awaitingSupply}<button class="link" onclick={onassignpart}>Assign catalogue part</button>{/if}
 			<button class="link danger" onclick={onremove}>Delete</button>
 		</div>

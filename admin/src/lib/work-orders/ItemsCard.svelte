@@ -6,6 +6,7 @@
 	import ItemRow from './ItemRow.svelte';
 	import PartPickerDialog from './PartPickerDialog.svelte';
 	import PriceDialog from './PriceDialog.svelte';
+	import PriceListPickerDialog from './PriceListPickerDialog.svelte';
 	import { addItem, assignCataloguePart, removeItem, updateItem } from './api.ts';
 	import { mutate } from './mutate.ts';
 
@@ -19,14 +20,20 @@
 	const totalCost = $derived(items.reduce((sum, i) => sum + (i.price ?? 0) * (i.type === 'INSTALLATION' ? 1 : (i.quantity ?? 0)), 0));
 
 	let pricing = $state<Item | null>(null);
+	let picking = $state<Item | null>(null);
 	let addingPart = $state(false);
 	let addingExternal = $state(false);
 	let identifying = $state<Item | null>(null);
+	let onList = $state<Record<string, string>>({});
 
 	const timers = new Map<string, ReturnType<typeof setTimeout>>();
 	function changeQuantity(item: Item, quantity: number) {
 		clearTimeout(timers.get(item.id));
 		timers.set(item.id, setTimeout(() => mutate(() => updateItem({ workOrderId: workOrder.id, itemId: item.id, quantity })), 500));
+	}
+	function pickFromList(item: Item, price: number) {
+		onList = { ...onList, [item.id]: 'list' };
+		mutate(() => updateItem({ workOrderId: workOrder.id, itemId: item.id, price }));
 	}
 </script>
 
@@ -45,8 +52,10 @@
 				{currency}
 				{editable}
 				priceEditable={workOrder.isChargeable}
+				onlist={onList[item.id] ?? null}
 				onquantity={(quantity) => changeQuantity(item, quantity)}
 				oneditprice={() => (pricing = item)}
+				onpickprice={() => (picking = item)}
 				onassignpart={() => (identifying = item)}
 				onremove={() => mutate(() => removeItem(workOrder.id, item.id))}
 			/>
@@ -66,6 +75,15 @@
 </div>
 
 <PriceDialog item={pricing} {currency} workOrderId={workOrder.id} onclose={() => (pricing = null)} />
+<PriceListPickerDialog
+	item={picking}
+	{currency}
+	countryCode={workOrder.device?.building.countryCode}
+	onpick={(price) => {
+		if (picking) pickFromList(picking, price);
+	}}
+	onclose={() => (picking = null)}
+/>
 <PartPickerDialog
 	bind:open={addingPart}
 	title="Add part"
