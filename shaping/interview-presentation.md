@@ -73,7 +73,7 @@ aliases[]                     country (FR/SG)
                                                                unit_of_measure
 price_list_line_price          time_band                        anchor_catalog_item_id (nullable)
 ----------------------         ---------                        coefficient_target
-line_id                       id                                discount_pct / min_qty / max_qty
+line_id                       id                                discount_pct / min_quantity / max_quantity
 time_band_id (nullable)       name (office-hours /             valid_from / valid_to
 unit_price                     after-office-hours /
                               sat-pm-sun-ph / surcharged / …)
@@ -83,7 +83,7 @@ unit_price                     after-office-hours /
 
 ### Slide 6 · Five data-model decisions (each traced to the CSVs)
 
-1. **`kind`** = LINE / LABOUR_RATE / COEFFICIENT / DEDUCTION — Lindenhome's single CSV mixes hourly rates, coefficient rules and volume discounts alongside ordinary lines; the schema must not treat every row as a price.
+1. **`kind`** = LINE / LABOUR_RATE / COEFFICIENT / DEDUCTION — Lindenhome's single CSV mixes hourly labour rates, service rates (per day/week/trip), coefficient rules and volume discounts alongside ordinary part lines; the schema must not treat every row as a price. `section` stays the raw CSV text, `unit_of_measure` a free string ("per day", "per level", "coefficient (e.g. 1.07)"), not an enum.
 2. **Prices child-keyed by nullable `time_band`** — Meridian prices every line in 3 bands; Lindenhome has one all-in price. A normalised `line → price` child with a nullable band holds both.
 3. **Many-to-many `account_price_list`** — "one account = one list" is false: Lindenhome is *two* customers (list belongs to AL), Meridian is a parent over 15 siblings with no link in the data.
 4. **Nullable `anchor_catalog_item`** — C2's hook; lay the FK now so C2 doesn't force a migration.
@@ -95,7 +95,7 @@ unit_price                     after-office-hours /
 2. **Backend** — `priceListForAccount`, `searchPriceListLines`, `priceListLine`; `pickPriceListLine` command.
 3. **Admin** — "Pick from price list" dialog beside today's "Edit price"; type-ahead, fills sell price, marks on-list.
 
-- **Depth signal:** the pick reuses the existing `ItemSellPriceSetEvent` — no new event type, no Salesforce seam change.
+- **Depth signal:** the pick reuses the existing `ItemSellPriceSetEvent` for the price and changes nothing on the Salesforce seam — but `source` + `priceListLineId` are new item state, so the pick event payload grows (extend `ItemSellPriceSetEvent`, or a dedicated `ItemPricedFromListEvent`); a freehand re-edit clears provenance.
 
 ### Slide 8 · Rabbit holes I avoided
 
@@ -146,7 +146,7 @@ The audit (03) shows Salesforce has no SoR concept and pricebooks are per-countr
 
 ### Q2 — "Walk me through why the data model looks like this."
 
-I traced every field to the two CSVs. `kind` because Lindenhome's single CSV mixes labour rates, coefficients, and discounts with ordinary lines. Prices as a child keyed by nullable `time_band` because Meridian prices every line in three bands while Lindenhome has one. Many-to-many `account_price_list` because one-account-one-list is false — Lindenhome is two customers and Meridian is a parent over 15 siblings with no link in the data. And `anchor_catalog_item` is nullable now so C2's matcher doesn't force a migration.
+I traced every field to the two CSVs. `kind` because Lindenhome's single CSV mixes labour rates, service rates, coefficients, and discounts with ordinary lines — and `unit_of_measure` stays a free string because it must hold "per day", "per level", "per set", and "coefficient (e.g. 1.07)". Prices as a child keyed by nullable `time_band` because Meridian prices every line in three bands while Lindenhome has one. Many-to-many `account_price_list` because one-account-one-list is false — Lindenhome is two customers and Meridian is a parent over 15 siblings with no link in the data. And `anchor_catalog_item` is nullable now so C2's matcher doesn't force a migration.
 
 ### Q3 — "How do you actually know it's working?"
 
@@ -163,6 +163,10 @@ Deferred, not ignored. Pattern A has no table to look up — the price is comput
 ### Q6 — "What did you get wrong or would you change?"
 
 Meridian's band-pick UX is my biggest uncertainty — I assumed the CSM picks the band manually, but if they think in part-codes first, name-search isn't enough. That's exactly why I put a `no_match` funnel event in, and it's my first PM question.
+
+### Q7 — "You said the pick reuses `ItemSellPriceSetEvent`. But `priceListLineId` and `source` are new state — how do they reach the event-sourced item?"
+
+The existing event only carries `{itemId, sellPrice}`, so provenance can't be a pure reuse. I either extend `ItemSellPriceSetEvent` with optional `priceListLineId`/`source`, or add a dedicated `ItemPricedFromListEvent` raised by the new `pickPriceListLine` command. The command loads the work order, raises the event (sets `sellPrice` to the line's unit price and records provenance), and saves; a later freehand `updateItem` clears provenance. What stays unchanged is the Salesforce seam — we still send only the resulting price.
 
 ---
 

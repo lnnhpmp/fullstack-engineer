@@ -62,7 +62,7 @@ aliases[]                     country (FR/SG)
                                                                anchor_catalog_item_id (nullable)
                                                                coefficient_target (off-list part /
                                                                                    subcontractor / …)
-                                                               discount_pct / min_qty / max_qty
+                                                                discount_pct / min_quantity / max_quantity
                                                                valid_from / valid_to
 
 price_list_line_price          time_band
@@ -75,9 +75,12 @@ unit_price                          sat-pm-sun-ph / surcharged / …)
 Key decisions, each tracing back to the two real CSVs:
 
 - **`kind` distinguishes row types.** Lindenhome's single CSV mixes hourly labour
-  rates (`0001AS`/`0002AS`), coefficient rules (`0097AS` 1.41, `5050AS`/`5510AS`
-  1.31) and volume-discount rows (`5600AS`/`5610AS`) alongside ordinary lines. The
-  schema must not treat all rows as prices.
+  rates (`0001AS`/`0002AS`), service rates (`0003AS`–`0008AS`, priced per
+  day/week/trip), coefficient rules (`0097AS` 1.41, `5050AS`/`5510AS` 1.31) and
+  volume-discount rows (`5600AS`/`5610AS`) alongside ordinary lines. The schema
+  must not treat all rows as prices. `section` stays the raw CSV text, `kind` the
+  normalised behaviour; `unit_of_measure` is a free string ("per day", "per
+  level", "coefficient (e.g. 1.07)"), not an enum.
 - **Prices are a child table keyed by time band**, with `time_band_id` nullable.
   Lindenhome labour has two bands (103.72 normal / 108.97 surcharged) and its
   parts one price (null band); Meridian prices *every* line in three bands
@@ -107,10 +110,13 @@ Key decisions, each tracing back to the two real CSVs:
    - `priceListForAccount(customerId)` → the list + lines,
    - `searchPriceListLines(priceListId, query)` → name/designation/code match,
    - `priceListLine(id)`.
-   Picking a line is a new command that reuses the existing `ItemSellPriceSetEvent`:
-   it sets the item's `sellPrice` to the line's unit price and records
-   `priceListLineId` + `source: 'list'` on the item (one extra column on
-   `work_order_item`). No change to the Salesforce seam.
+   Picking a line is a new command `pickPriceListLine` that sets the item's
+   `sellPrice` to the line's unit price and records `priceListLineId` +
+   `source: 'list'` on the item (two new columns on `work_order_item`). It
+   reuses the price-set path (`ItemSellPriceSetEvent`), extended to carry the
+   provenance — or a dedicated `ItemPricedFromListEvent` — so `source` and
+   `priceListLineId` survive the event stream; a later freehand re-edit clears
+   provenance. No change to the Salesforce seam.
 3. **Admin UI** — in the work-order detail page, next to today's "Edit price"
    dialog, a "Pick from price list" dialog: type-ahead search over the account's
    list; selecting a line fills the sell price and marks the line as on-list.
