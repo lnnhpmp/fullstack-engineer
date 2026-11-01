@@ -3,7 +3,7 @@ import type { Part, WorkOrder, WorkOrderState } from '../types.ts';
 
 const DEVICE = `device {
 	id deviceNo
-	building { id name city countryCode customer { companyName } }
+	building { id name city countryCode customer { id companyName } }
 	contracts { contract { contractNo type } }
 }`;
 

@@ -117,3 +117,16 @@ export const MERIDIAN: MockPriceList = {
 		}
 	]
 };
+
+// Resolve the account's price list by customer id (mock: hardcoded from the anonymised ids).
+export const CUSTOMER_PRICE_LISTS: Record<number, MockPriceList> = {
+	44889: LINDENHOME, // Lindenhome AL
+	87050: MERIDIAN, // Serava Mall LLP
+	80174: MERIDIAN, // Meridian Property North Gem
+	89840: MERIDIAN, // Meridian Property Lumière
+	43375: MERIDIAN, // Ardmoor (Meridian Lumière Trust)
+	73295: MERIDIAN, // Meridian - Kembang 1
+	86663: MERIDIAN // MR Retail Trustee
+};
+
+export const priceListForCustomer = (customerId: number): MockPriceList | null => CUSTOMER_PRICE_LISTS[customerId] ?? null;

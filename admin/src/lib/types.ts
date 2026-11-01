@@ -36,7 +36,7 @@ export interface Item {
 export interface Device {
 	id: string;
 	deviceNo: string;
-	building: { id: string; name: string; city: string; countryCode: string; customer: { companyName: string } };
+	building: { id: string; name: string; city: string; countryCode: string; customer: { id: number; companyName: string } };
 	contracts: { contract: { contractNo: string; type: string } }[];
 }
 

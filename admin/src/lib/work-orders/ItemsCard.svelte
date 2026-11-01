@@ -78,7 +78,7 @@
 <PriceListPickerDialog
 	item={picking}
 	{currency}
-	countryCode={workOrder.device?.building.countryCode}
+	customerId={workOrder.device?.building.customer.id ?? 0}
 	onpick={(price) => {
 		if (picking) pickFromList(picking, price);
 	}}
