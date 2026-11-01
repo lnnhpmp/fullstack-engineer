@@ -18,6 +18,9 @@ export interface ItemProps {
   comment?: string
   price?: number
   sellPrice?: number
+  priceListLineId?: string
+  timeBandId?: string
+  source?: string
 }
 
 export abstract class WorkOrderItem {
@@ -30,11 +33,20 @@ export abstract class WorkOrderItem {
    * Currently utilized by Installation items and available for future use by other item types.
    */
   sellPrice?: number
+  /** The price-list line this item's sell price was picked from, if any. */
+  priceListLineId?: string
+  /** The time band whose price row was used for a banded line. */
+  timeBandId?: string
+  /** 'list' when the sell price traces to an unedited pick; 'typed' once manually edited. */
+  source?: string
 
   constructor(props: ItemProps) {
     this.id = props.id
     this.price = props.price
     this.sellPrice = props.sellPrice
+    this.priceListLineId = props.priceListLineId
+    this.timeBandId = props.timeBandId
+    this.source = props.source
   }
 
   static fromProps(props: ItemProps): WorkOrderItem {
@@ -59,7 +71,15 @@ export abstract class WorkOrderItem {
   abstract toSalesforceProduct(skus: Map<string, string>): QuoteProduct | null
 
   toProps(): ItemProps {
-    return { id: this.id, type: this.type, price: this.price, sellPrice: this.sellPrice }
+    return {
+      id: this.id,
+      type: this.type,
+      price: this.price,
+      sellPrice: this.sellPrice,
+      priceListLineId: this.priceListLineId,
+      timeBandId: this.timeBandId,
+      source: this.source,
+    }
   }
 }
 

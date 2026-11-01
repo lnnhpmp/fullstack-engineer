@@ -16,6 +16,9 @@ export class WorkOrderItemOrmEntity {
   @Column('varchar', { nullable: true }) comment: string | null
   @Column('decimal', { precision: 12, scale: 2, nullable: true, transformer: decimal }) price: number | null
   @Column('decimal', { precision: 12, scale: 2, nullable: true, transformer: decimal }) sellPrice: number | null
+  @Column('uuid', { nullable: true }) priceListLineId: string | null
+  @Column('uuid', { nullable: true }) timeBandId: string | null
+  @Column('varchar', { nullable: true }) source: string | null
   @ManyToOne('WorkOrderOrmEntity', 'items', { onDelete: 'CASCADE', orphanedRowAction: 'delete' })
   @JoinColumn({ name: 'workOrderId' })
   workOrder?: WorkOrderOrmEntity

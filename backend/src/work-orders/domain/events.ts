@@ -9,7 +9,14 @@ export type WorkOrderEvent = Stamped<
   | { readonly type: 'ItemRemovedEvent'; readonly itemId: string }
   | { readonly type: 'ItemQuantityChangedEvent'; readonly itemId: string; readonly quantity: number }
   | { readonly type: 'ItemPricedEvent'; readonly itemId: string; readonly price: number }
-  | { readonly type: 'ItemSellPriceSetEvent'; readonly itemId: string; readonly sellPrice: number }
+  | {
+      readonly type: 'ItemSellPriceSetEvent'
+      readonly itemId: string
+      readonly sellPrice: number
+      readonly priceListLineId?: string
+      readonly timeBandId?: string
+      readonly source?: string
+    }
   | { readonly type: 'CataloguePartAssignedEvent'; readonly itemId: string; readonly partId: string }
   | {
       readonly type: 'WorkOrderQuoteChangedEvent'

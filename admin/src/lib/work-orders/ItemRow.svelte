@@ -67,7 +67,9 @@
 				</div>
 			{/if}
 			<button class="link" disabled={!priceEditable} onclick={oneditprice}>Edit price</button>
-			<button class="link" disabled={!priceEditable} onclick={onpickprice}>Pick from price list</button>
+			{#if item.type !== 'INSTALLATION'}
+				<button class="link" disabled={!priceEditable} onclick={onpickprice}>Pick from price list</button>
+			{/if}
 			{#if awaitingSupply}<button class="link" onclick={onassignpart}>Assign catalogue part</button>{/if}
 			<button class="link danger" onclick={onremove}>Delete</button>
 		</div>

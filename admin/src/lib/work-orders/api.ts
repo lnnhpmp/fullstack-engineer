@@ -1,5 +1,5 @@
 import { gql } from '../graphql.ts';
-import type { Part, WorkOrder, WorkOrderState } from '../types.ts';
+import type { Part, PriceList, PriceListLine, PriceListLineKind, WorkOrder, WorkOrderState } from '../types.ts';
 
 const DEVICE = `device {
 	id deviceNo
@@ -51,6 +51,32 @@ export const findParts = (search: string) =>
 	gql<{ parts: Part[] }>(`query Parts($search: String) { parts(search: $search, limit: 20) { id sku name brand averageCost } }`, { search }).then(
 		(data) => data.parts
 	);
+
+const PRICE_LIST_LINE = `id code designation section kind unitOfMeasure prices { id unitPrice timeBand { id name } }`;
+
+/** The Schedule of Rates linked to an account, or null when it has none. */
+export const getPriceListForAccount = (customerId: number) =>
+	gql<{ priceListForAccount: PriceList | null }>(
+		`query PriceListForAccount($customerId: Int!) {
+			priceListForAccount(customerId: $customerId) {
+				id name country currency pattern
+				lines { ${PRICE_LIST_LINE} }
+			}
+		}`,
+		{ customerId }
+	).then((data) => data.priceListForAccount);
+
+export const searchPriceListLines = (priceListId: string, query: string, kind: PriceListLineKind, limit = 20) =>
+	gql<{ searchPriceListLines: PriceListLine[] }>(
+		`query SearchPriceListLines($priceListId: ID!, $query: String!, $kind: PriceListLineKind, $limit: Int) {
+			searchPriceListLines(priceListId: $priceListId, query: $query, kind: $kind, limit: $limit) { ${PRICE_LIST_LINE} }
+		}`,
+		{ priceListId, query, kind, limit }
+	).then((data) => data.searchPriceListLines);
+
+/** Prices an item from its account's Schedule of Rates, recording the line and time band it came from. */
+export const pickPriceListLine = (input: { workOrderId: string; itemId: string; priceListLineId: string; timeBandId?: string | null }) =>
+	gql(`mutation PickPriceListLine($input: PickPriceListLineInput!) { pickPriceListLine(input: $input) { id } }`, { input });
 
 export const addItem = (input: Record<string, unknown>) =>
 	gql(`mutation AddItem($input: AddItemInput!) { addItem(input: $input) { id } }`, { input });

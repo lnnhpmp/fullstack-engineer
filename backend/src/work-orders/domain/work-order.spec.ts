@@ -46,6 +46,22 @@ describe('WorkOrder', () => {
     expect(WorkOrder.rehydrate(workOrder.uncommittedEvents).toProps()).toEqual(workOrder.toProps())
   })
 
+  it('tracks price-list provenance and clears it when the sell price is edited by hand', () => {
+    const workOrder = newWorkOrder()
+    const item = workOrder.items[0]
+
+    workOrder.pickPriceListLine(item.id, { priceListLineId: 'line-1', timeBandId: 'band-1', sellPrice: 103.72 })
+    expect(item.sellPrice).toBe(103.72)
+    expect(item.priceListLineId).toBe('line-1')
+    expect(item.timeBandId).toBe('band-1')
+    expect(item.source).toBe('list')
+
+    workOrder.updateItem(item.id, { sellPrice: 120 })
+    expect(item.source).toBeUndefined()
+    expect(item.priceListLineId).toBeUndefined()
+    expect(item.timeBandId).toBeUndefined()
+  })
+
   it('can be rebuilt from its events', () => {
     const workOrder = newWorkOrder()
     workOrder.updateItem(workOrder.items[0].id, { quantity: 3 })

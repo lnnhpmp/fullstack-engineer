@@ -1,8 +1,8 @@
 <script lang="ts">
-	import type { Item } from '../types.ts';
+	import type { Item, PriceList, PriceListLine, PriceListLineKind, PriceListPrice } from '../types.ts';
 	import Dialog from '../ui/Dialog.svelte';
 	import { money } from '../format.ts';
-	import { priceListForCustomer, type MockBand, type MockLine } from './priceListMock.ts';
+	import { getPriceListForAccount, searchPriceListLines } from './api.ts';
 
 	let {
 		item,
@@ -14,60 +14,112 @@
 		item: Item | null;
 		currency: string;
 		customerId: number;
-		onpick: (price: number, band: string | null) => void;
+		onpick: (pick: { price: number; lineId: string; timeBandId: string | null }) => void;
 		onclose: () => void;
 	} = $props();
 
 	let open = $state(false);
 	let query = $state('');
-	let selected = $state<MockLine | null>(null);
-	let band = $state<MockBand | null>(null);
+	let priceList = $state<PriceList | null>(null);
+	let loadingList = $state(false);
+	let loadError = $state<string | null>(null);
+	let results = $state<PriceListLine[]>([]);
+	let searching = $state(false);
+	let searchError = $state<string | null>(null);
+	let selected = $state<PriceListLine | null>(null);
+	let band = $state<PriceListPrice | null>(null);
 
 	$effect(() => {
 		open = !!item;
-		if (item) {
-			query = '';
-			selected = null;
-			band = null;
-		}
+		if (!item) return;
+		query = '';
+		selected = null;
+		band = null;
+		results = [];
+		loadError = null;
+		searchError = null;
 	});
+
+	// A MAN_HOUR item is priced from a labour rate; anything else from a parts line.
+	const kind = $derived<PriceListLineKind>(item?.type === 'MAN_HOUR' ? 'LABOUR_RATE' : 'LINE');
+
 	$effect(() => {
-		if (!open && item) onclose();
+		if (!item) return;
+		const customer = customerId;
+		let cancelled = false;
+		priceList = null;
+		loadingList = true;
+		loadError = null;
+		getPriceListForAccount(customer)
+			.then((list) => {
+				if (!cancelled) priceList = list;
+			})
+			.catch((error) => {
+				if (!cancelled) loadError = (error as Error).message;
+			})
+			.finally(() => {
+				if (!cancelled) loadingList = false;
+			});
+		return () => {
+			cancelled = true;
+		};
 	});
 
-	const list = $derived(priceListForCustomer(customerId));
-	const kind = $derived(item?.type === 'MAN_HOUR' ? 'LABOUR_RATE' : 'LINE');
-	const results = $derived(
-		list
-			? list.lines
-					.filter((l) => l.kind === kind)
-					.filter((l) => query.trim() === '' || `${l.designation} ${l.code}`.toLowerCase().includes(query.trim().toLowerCase()))
-					.slice(0, 8)
-			: []
-	);
-	const price = $derived(selected ? (selected.bands ? band?.price : selected.price) : null);
+	$effect(() => {
+		const list = priceList;
+		const lineKind = kind;
+		const term = query;
+		if (!open || !list) return;
 
-	function pick(line: MockLine) {
+		let cancelled = false;
+		selected = null;
+		band = null;
+		searching = true;
+		searchError = null;
+		const timer = setTimeout(() => {
+			searchPriceListLines(list.id, term, lineKind, 20)
+				.then((lines) => {
+					if (!cancelled) results = lines;
+				})
+				.catch((error) => {
+					if (!cancelled) searchError = (error as Error).message;
+				})
+				.finally(() => {
+					if (!cancelled) searching = false;
+				});
+		}, 200);
+
+		return () => {
+			cancelled = true;
+			clearTimeout(timer);
+		};
+	});
+
+	const chosenPrice = $derived(selected ? (selected.prices.length === 1 ? selected.prices[0] : band) : null);
+	const price = $derived(chosenPrice?.unitPrice ?? null);
+
+	function pick(line: PriceListLine) {
 		if (selected?.id === line.id) return;
 		selected = line;
-		band = line.bands ? line.bands[0] : null;
+		band = line.prices.length > 1 ? line.prices[0] : null;
 	}
 
 	function confirm() {
-		if (!selected || price == null) return;
-		onpick(price, band?.label ?? null);
+		if (!selected || !chosenPrice) return;
+		onpick({ price: chosenPrice.unitPrice, lineId: selected.id, timeBandId: chosenPrice.timeBand?.id ?? null });
 		open = false;
 	}
 </script>
 
 <Dialog bind:open title="Pick from price list">
-	<p class="proto">Prototype — fake data. The real version queries <code>searchPriceListLines</code>.</p>
-
-	{#if !list}
+	{#if loadingList}
+		<p class="grey">Loading the account's price list…</p>
+	{:else if loadError}
+		<p class="error">{loadError}</p>
+	{:else if !priceList}
 		<p class="grey">This account has no linked price list. Price the item by hand.</p>
 	{:else}
-		<p class="grey note">{list.client} — {list.country}, {list.currency}</p>
-		<p class="grey note">{list.note}</p>
+		<p class="grey note">{priceList.name} — {priceList.country}, {priceList.currency}</p>
 
 		<p class="filter-hint">Showing {kind === 'LABOUR_RATE' ? 'labour rates' : 'parts'} for this item</p>
 
@@ -83,25 +135,27 @@
 						<span class="code">{line.code}</span>
 						<span class="desig">{line.designation}</span>
 						{#if line.kind === 'LABOUR_RATE'}<span class="tag">Labour</span>{/if}
-						{#if line.bands}
-							<span class="unit">{line.unit}</span>
+						{#if line.prices.length === 1}
+							<span class="line-price">{money(line.prices[0].unitPrice, currency)}</span>
 						{:else}
-							<span class="line-price">{money(line.price, currency)}</span>
+							<span class="unit">{line.unitOfMeasure}</span>
 						{/if}
 					</button>
-					{#if line.bands && selected?.id === line.id}
+					{#if selected?.id === line.id && line.prices.length > 1}
 						<div class="bands">
-							{#each line.bands as b (b.id)}
-								<button type="button" class="band" class:active={band?.id === b.id} onclick={() => (band = b)}>
-									<span>{b.label}</span>
-									<span>{money(b.price, currency)}</span>
+							{#each line.prices as linePrice (linePrice.id)}
+								<button type="button" class="band" class:active={band?.id === linePrice.id} onclick={() => (band = linePrice)}>
+									<span>{linePrice.timeBand?.name ?? 'Standard'}</span>
+									<span>{money(linePrice.unitPrice, currency)}</span>
 								</button>
 							{/each}
 						</div>
 					{/if}
 				</li>
 			{:else}
-				<li class="grey empty">No match</li>
+				<li class="grey empty">
+					{#if searching}Searching…{:else if searchError}{searchError}{:else}No match{/if}
+				</li>
 			{/each}
 		</ul>
 	{/if}
@@ -113,14 +167,6 @@
 </Dialog>
 
 <style>
-	.proto {
-		margin: 0 0 12px;
-		padding: 8px 10px;
-		border-radius: 6px;
-		background: #eef0f4;
-		color: #6b7286;
-		font-size: 12px;
-	}
 	.field {
 		display: block;
 		margin-bottom: 12px;
@@ -143,6 +189,9 @@
 		font-size: 12px;
 		font-weight: 500;
 		color: #2952cc;
+	}
+	.error {
+		color: #b42318;
 	}
 	ul {
 		list-style: none;
@@ -198,19 +247,23 @@
 	}
 	.line-price {
 		font-weight: 600;
-		white-space: nowrap;
 	}
 	.bands {
 		display: flex;
-		flex-direction: column;
+		flex-wrap: wrap;
 		gap: 6px;
 		padding: 0 12px 10px;
 	}
 	.band {
 		display: flex;
-		justify-content: space-between;
-		gap: 12px;
-		text-align: left;
+		gap: 8px;
+		align-items: baseline;
+		border: 1px solid #d7dbe4;
+		border-radius: 6px;
+		background: none;
+		padding: 4px 8px;
+		font: inherit;
+		font-size: 12px;
 	}
 	.band.active {
 		border-color: #2952cc;

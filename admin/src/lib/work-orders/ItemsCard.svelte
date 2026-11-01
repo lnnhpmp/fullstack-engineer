@@ -7,7 +7,7 @@
 	import PartPickerDialog from './PartPickerDialog.svelte';
 	import PriceDialog from './PriceDialog.svelte';
 	import PriceListPickerDialog from './PriceListPickerDialog.svelte';
-	import { addItem, assignCataloguePart, removeItem, updateItem } from './api.ts';
+	import { addItem, assignCataloguePart, pickPriceListLine, removeItem, updateItem } from './api.ts';
 	import { mutate } from './mutate.ts';
 
 	let { workOrder }: { workOrder: WorkOrder } = $props();
@@ -31,9 +31,18 @@
 		clearTimeout(timers.get(item.id));
 		timers.set(item.id, setTimeout(() => mutate(() => updateItem({ workOrderId: workOrder.id, itemId: item.id, quantity })), 500));
 	}
-	function pickFromList(item: Item, price: number) {
+	function pickFromList(item: Item, pick: { price: number; lineId: string; timeBandId: string | null }) {
 		onList = { ...onList, [item.id]: 'list' };
-		mutate(() => updateItem({ workOrderId: workOrder.id, itemId: item.id, price }));
+		mutate(
+			() =>
+				pickPriceListLine({
+					workOrderId: workOrder.id,
+					itemId: item.id,
+					priceListLineId: pick.lineId,
+					timeBandId: pick.timeBandId
+				}),
+			'Price picked from list'
+		);
 	}
 </script>
 
@@ -79,8 +88,8 @@
 	item={picking}
 	{currency}
 	customerId={workOrder.device?.building.customer.id ?? 0}
-	onpick={(price) => {
-		if (picking) pickFromList(picking, price);
+	onpick={(pick) => {
+		if (picking) pickFromList(picking, pick);
 	}}
 	onclose={() => (picking = null)}
 />

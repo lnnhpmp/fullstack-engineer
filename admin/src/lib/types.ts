@@ -12,6 +12,38 @@ export type QuoteStatus = 'DRAFT' | 'TO_SIGN' | 'VALIDATION' | 'SIGNED' | 'WORKS
 
 export type ItemType = 'PART' | 'MAN_HOUR' | 'EXTERNAL_PART' | 'TECH_SUPPORT' | 'INSTALLATION';
 
+export type PriceListLineKind = 'LINE' | 'LABOUR_RATE' | 'COEFFICIENT' | 'DEDUCTION';
+
+export interface TimeBand {
+	id: string;
+	name: string;
+}
+
+export interface PriceListPrice {
+	id: string;
+	timeBand: TimeBand | null;
+	unitPrice: number;
+}
+
+export interface PriceListLine {
+	id: string;
+	code: string | null;
+	designation: string | null;
+	section: string | null;
+	kind: PriceListLineKind;
+	unitOfMeasure: string | null;
+	prices: PriceListPrice[];
+}
+
+export interface PriceList {
+	id: string;
+	name: string;
+	country: string;
+	currency: string;
+	pattern: string;
+	lines: PriceListLine[];
+}
+
 export interface Part {
 	id: string;
 	sku: string;

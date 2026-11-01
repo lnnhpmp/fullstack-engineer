@@ -111,8 +111,20 @@ export class WorkOrder extends EventSourced<WorkOrderEvent> {
     return this.item(itemId)
   }
 
-  assignCataloguePart(itemId: string, partId: string): WorkOrderItem {
-    if (!(this.item(itemId) instanceof ExternalPartItem)) {
+  pickPriceListLine(itemId: string, pick: { priceListLineId: string; timeBandId?: string; sellPrice: number }): WorkOrderItem {
+    this.item(itemId)
+    this.raise({
+      type: 'ItemSellPriceSetEvent',
+      itemId,
+      sellPrice: pick.sellPrice,
+      priceListLineId: pick.priceListLineId,
+      timeBandId: pick.timeBandId,
+      source: 'list',
+    })
+    return this.item(itemId)
+  }
+
+  assignCataloguePart(itemId: string, partId: string): WorkOrderItem {    if (!(this.item(itemId) instanceof ExternalPartItem)) {
       throw new NotAnExternalPartError(`Item ${itemId} on work order ${this.workOrderNumber} is not an external part`)
     }
     this.raise({ type: 'CataloguePartAssignedEvent', itemId, partId })
@@ -228,9 +240,14 @@ export class WorkOrder extends EventSourced<WorkOrderEvent> {
       case 'ItemPricedEvent':
         this.item(event.itemId).price = event.price
         break
-      case 'ItemSellPriceSetEvent':
-        this.item(event.itemId).sellPrice = event.sellPrice
+      case 'ItemSellPriceSetEvent': {
+        const item = this.item(event.itemId)
+        item.sellPrice = event.sellPrice
+        item.priceListLineId = event.priceListLineId
+        item.timeBandId = event.timeBandId
+        item.source = event.source
         break
+      }
       case 'CataloguePartAssignedEvent':
         Object.assign(this.item(event.itemId), { partId: event.partId })
         break
