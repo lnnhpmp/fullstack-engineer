@@ -1,0 +1,650 @@
+[
+  {
+    "no": 1,
+    "description": "ARD Battery 65AH - 4 x 12 AH",
+    "uom": "Per Set",
+    "office_hours_sgd": 588.0,
+    "after_office_hours_sgd": 705.0,
+    "sat_pm_sun_ph_sgd": 705.0
+  },
+  {
+    "no": 2,
+    "description": "ARD Battery 65AH - 4 x 28 AH",
+    "uom": "Per Set",
+    "office_hours_sgd": 588.0,
+    "after_office_hours_sgd": 705.0,
+    "sat_pm_sun_ph_sgd": 705.0
+  },
+  {
+    "no": 3,
+    "description": "ARD Battery 65AH - 3 x 100 AH",
+    "uom": "Per Set",
+    "office_hours_sgd": 849.0,
+    "after_office_hours_sgd": 1019.0,
+    "sat_pm_sun_ph_sgd": 1019.0
+  },
+  {
+    "no": 4,
+    "description": "ARD Battery 65AH - 3 x 43 AH",
+    "uom": "Per Set",
+    "office_hours_sgd": 849.0,
+    "after_office_hours_sgd": 1019.0,
+    "sat_pm_sun_ph_sgd": 1019.0
+  },
+  {
+    "no": 5,
+    "description": "ARD Battery 65AH - 3 x 65 AH",
+    "uom": "Per Set",
+    "office_hours_sgd": 849.0,
+    "after_office_hours_sgd": 1019.0,
+    "sat_pm_sun_ph_sgd": 1019.0
+  },
+  {
+    "no": 6,
+    "description": "Brake unit without switch",
+    "uom": "Per Pc",
+    "office_hours_sgd": 1437.0,
+    "after_office_hours_sgd": 1763.0,
+    "sat_pm_sun_ph_sgd": 1763.0
+  },
+  {
+    "no": 7,
+    "description": "Car guide shoe",
+    "uom": "Per Pc",
+    "office_hours_sgd": 235.0,
+    "after_office_hours_sgd": 313.0,
+    "sat_pm_sun_ph_sgd": 313.0
+  },
+  {
+    "no": 8,
+    "description": "Car top battery",
+    "uom": "Per Pc",
+    "office_hours_sgd": 78.0,
+    "after_office_hours_sgd": 157.0,
+    "sat_pm_sun_ph_sgd": 157.0
+  },
+  {
+    "no": 9,
+    "description": "Car top fan (cross flow)",
+    "uom": "Per Pc",
+    "office_hours_sgd": 327.0,
+    "after_office_hours_sgd": 457.0,
+    "sat_pm_sun_ph_sgd": 457.0
+  },
+  {
+    "no": 10,
+    "description": "Comb Plate",
+    "uom": "Per Pc",
+    "office_hours_sgd": 274.0,
+    "after_office_hours_sgd": 327.0,
+    "sat_pm_sun_ph_sgd": 327.0
+  },
+  {
+    "no": 11,
+    "description": "Control current transformer",
+    "uom": "Per Pc",
+    "office_hours_sgd": 392.0,
+    "after_office_hours_sgd": 483.0,
+    "sat_pm_sun_ph_sgd": 483.0
+  },
+  {
+    "no": 12,
+    "description": "COP button",
+    "uom": "Per Pc",
+    "office_hours_sgd": 65.0,
+    "after_office_hours_sgd": 104.0,
+    "sat_pm_sun_ph_sgd": 104.0
+  },
+  {
+    "no": 13,
+    "description": "Counter Roller",
+    "uom": "Per Pc",
+    "office_hours_sgd": 1110.0,
+    "after_office_hours_sgd": 1437.0,
+    "sat_pm_sun_ph_sgd": 1437.0
+  },
+  {
+    "no": 14,
+    "description": "Counterweight main sheave",
+    "uom": "Per Pc",
+    "office_hours_sgd": 4311.0,
+    "after_office_hours_sgd": 5486.0,
+    "sat_pm_sun_ph_sgd": 5486.0
+  },
+  {
+    "no": 15,
+    "description": "Curtain of light",
+    "uom": "Per Pc",
+    "office_hours_sgd": 1894.0,
+    "after_office_hours_sgd": 2221.0,
+    "sat_pm_sun_ph_sgd": 2221.0
+  },
+  {
+    "no": 16,
+    "description": "Door Contact (Male / Female)",
+    "uom": "Per Pc",
+    "office_hours_sgd": 157.0,
+    "after_office_hours_sgd": 196.0,
+    "sat_pm_sun_ph_sgd": 196.0
+  },
+  {
+    "no": 17,
+    "description": "Door hangar roller",
+    "uom": "Per Pc",
+    "office_hours_sgd": 157.0,
+    "after_office_hours_sgd": 196.0,
+    "sat_pm_sun_ph_sgd": 196.0
+  },
+  {
+    "no": 18,
+    "description": "Door header (stainless steel)",
+    "uom": "Per Landing",
+    "office_hours_sgd": 3266.0,
+    "after_office_hours_sgd": 3919.0,
+    "sat_pm_sun_ph_sgd": 3919.0
+  },
+  {
+    "no": 19,
+    "description": "Door Lock",
+    "uom": "Per Pc",
+    "office_hours_sgd": 522.0,
+    "after_office_hours_sgd": 627.0,
+    "sat_pm_sun_ph_sgd": 627.0
+  },
+  {
+    "no": 20,
+    "description": "Door Motor",
+    "uom": "Per Pc",
+    "office_hours_sgd": 980.0,
+    "after_office_hours_sgd": 1176.0,
+    "sat_pm_sun_ph_sgd": 1176.0
+  },
+  {
+    "no": 21,
+    "description": "Door Motor Belt",
+    "uom": "Per Pc",
+    "office_hours_sgd": 196.0,
+    "after_office_hours_sgd": 235.0,
+    "sat_pm_sun_ph_sgd": 235.0
+  },
+  {
+    "no": 22,
+    "description": "Door track",
+    "uom": "Per Door",
+    "office_hours_sgd": 2612.0,
+    "after_office_hours_sgd": 3135.0,
+    "sat_pm_sun_ph_sgd": 3135.0
+  },
+  {
+    "no": 23,
+    "description": "Drive module",
+    "uom": "Per Pc",
+    "office_hours_sgd": 1567.0,
+    "after_office_hours_sgd": 1959.0,
+    "sat_pm_sun_ph_sgd": 1959.0
+  },
+  {
+    "no": 24,
+    "description": "EBOPS / UPS device with battery",
+    "uom": "Per Pc",
+    "office_hours_sgd": 1633.0,
+    "after_office_hours_sgd": 1959.0,
+    "sat_pm_sun_ph_sgd": 1959.0
+  },
+  {
+    "no": 25,
+    "description": "EBOPS' battery only",
+    "uom": "Per Pc",
+    "office_hours_sgd": 588.0,
+    "after_office_hours_sgd": 705.0,
+    "sat_pm_sun_ph_sgd": 705.0
+  },
+  {
+    "no": 26,
+    "description": "Electronic Box",
+    "uom": "Per Pc",
+    "office_hours_sgd": 1110.0,
+    "after_office_hours_sgd": 1372.0,
+    "sat_pm_sun_ph_sgd": 1372.0
+  },
+  {
+    "no": 27,
+    "description": "Encoder",
+    "uom": "Per Pc",
+    "office_hours_sgd": 784.0,
+    "after_office_hours_sgd": 980.0,
+    "sat_pm_sun_ph_sgd": 980.0
+  },
+  {
+    "no": 28,
+    "description": "Escalator Glass Panel (5.8m rise)",
+    "uom": "Per Pc",
+    "office_hours_sgd": 3135.0,
+    "after_office_hours_sgd": 3788.0,
+    "sat_pm_sun_ph_sgd": 3788.0
+  },
+  {
+    "no": 29,
+    "description": "Escalator Glass Panel (Curve/Straight)",
+    "uom": "Per Pc",
+    "office_hours_sgd": 3657.0,
+    "after_office_hours_sgd": 4441.0,
+    "sat_pm_sun_ph_sgd": 4441.0
+  },
+  {
+    "no": 30,
+    "description": "Escalator Handrail",
+    "uom": "Per No.",
+    "office_hours_sgd": 4311.0,
+    "after_office_hours_sgd": 6401.0,
+    "sat_pm_sun_ph_sgd": 6401.0
+  },
+  {
+    "no": 31,
+    "description": "Escalator LED Lighting",
+    "uom": "Per Pc",
+    "office_hours_sgd": 104.0,
+    "after_office_hours_sgd": 157.0,
+    "sat_pm_sun_ph_sgd": 157.0
+  },
+  {
+    "no": 32,
+    "description": "Escalator limit safety switch",
+    "uom": "Per Pc",
+    "office_hours_sgd": 157.0,
+    "after_office_hours_sgd": 196.0,
+    "sat_pm_sun_ph_sgd": 196.0
+  },
+  {
+    "no": 33,
+    "description": "Escalator limit swith, chain tension",
+    "uom": "Per Pc",
+    "office_hours_sgd": 157.0,
+    "after_office_hours_sgd": 196.0,
+    "sat_pm_sun_ph_sgd": 196.0
+  },
+  {
+    "no": 34,
+    "description": "Escalator Main Board",
+    "uom": "Per Pc",
+    "office_hours_sgd": 1437.0,
+    "after_office_hours_sgd": 1959.0,
+    "sat_pm_sun_ph_sgd": 1959.0
+  },
+  {
+    "no": 35,
+    "description": "Escalator Photocell / Radar",
+    "uom": "Per Pc",
+    "office_hours_sgd": 522.0,
+    "after_office_hours_sgd": 627.0,
+    "sat_pm_sun_ph_sgd": 627.0
+  },
+  {
+    "no": 36,
+    "description": "Escalator Relay terminal",
+    "uom": "Per Pc",
+    "office_hours_sgd": 118.0,
+    "after_office_hours_sgd": 157.0,
+    "sat_pm_sun_ph_sgd": 157.0
+  },
+  {
+    "no": 37,
+    "description": "Escalator safety brush, both sides",
+    "uom": "Per Pc",
+    "office_hours_sgd": 235.0,
+    "after_office_hours_sgd": 327.0,
+    "sat_pm_sun_ph_sgd": 327.0
+  },
+  {
+    "no": 38,
+    "description": "Escalator Step Chain",
+    "uom": "Per Escalator",
+    "office_hours_sgd": 20247.0,
+    "after_office_hours_sgd": 23774.0,
+    "sat_pm_sun_ph_sgd": 23774.0
+  },
+  {
+    "no": 39,
+    "description": "Escalator Step Comb",
+    "uom": "Per Pc",
+    "office_hours_sgd": 274.0,
+    "after_office_hours_sgd": 327.0,
+    "sat_pm_sun_ph_sgd": 327.0
+  },
+  {
+    "no": 40,
+    "description": "Escalator Step Connector",
+    "uom": "Per Pc",
+    "office_hours_sgd": 196.0,
+    "after_office_hours_sgd": 235.0,
+    "sat_pm_sun_ph_sgd": 235.0
+  },
+  {
+    "no": 41,
+    "description": "Escalator Step Roller",
+    "uom": "Per Pc",
+    "office_hours_sgd": 52.0,
+    "after_office_hours_sgd": 72.0,
+    "sat_pm_sun_ph_sgd": 72.0
+  },
+  {
+    "no": 42,
+    "description": "Escalator Steps",
+    "uom": "Per Pc",
+    "office_hours_sgd": 1176.0,
+    "after_office_hours_sgd": 1633.0,
+    "sat_pm_sun_ph_sgd": 1633.0
+  },
+  {
+    "no": 43,
+    "description": "Escalator Transformer",
+    "uom": "Per Pc",
+    "office_hours_sgd": 392.0,
+    "after_office_hours_sgd": 483.0,
+    "sat_pm_sun_ph_sgd": 483.0
+  },
+  {
+    "no": 44,
+    "description": "Fire lift switch faceplate",
+    "uom": "Per Pc",
+    "office_hours_sgd": 157.0,
+    "after_office_hours_sgd": 196.0,
+    "sat_pm_sun_ph_sgd": 196.0
+  },
+  {
+    "no": 45,
+    "description": "Fire lift switch glass cover",
+    "uom": "Per Pc",
+    "office_hours_sgd": 52.0,
+    "after_office_hours_sgd": 78.0,
+    "sat_pm_sun_ph_sgd": 78.0
+  },
+  {
+    "no": 46,
+    "description": "Hall indicator",
+    "uom": "Per Pc",
+    "office_hours_sgd": 366.0,
+    "after_office_hours_sgd": 457.0,
+    "sat_pm_sun_ph_sgd": 457.0
+  },
+  {
+    "no": 47,
+    "description": "Hangar Roller",
+    "uom": "Per Pc",
+    "office_hours_sgd": 157.0,
+    "after_office_hours_sgd": 196.0,
+    "sat_pm_sun_ph_sgd": 196.0
+  },
+  {
+    "no": 48,
+    "description": "Inspection Box - Elevator",
+    "uom": "Per Pc",
+    "office_hours_sgd": 849.0,
+    "after_office_hours_sgd": 1045.0,
+    "sat_pm_sun_ph_sgd": 1045.0
+  },
+  {
+    "no": 49,
+    "description": "Landing button",
+    "uom": "Per Pc",
+    "office_hours_sgd": 65.0,
+    "after_office_hours_sgd": 104.0,
+    "sat_pm_sun_ph_sgd": 104.0
+  },
+  {
+    "no": 50,
+    "description": "Landing door architrave",
+    "uom": "Per Door",
+    "office_hours_sgd": 2351.0,
+    "after_office_hours_sgd": 3135.0,
+    "sat_pm_sun_ph_sgd": 3135.0
+  },
+  {
+    "no": 51,
+    "description": "Landing Door Jamb",
+    "uom": "Per Door",
+    "office_hours_sgd": 2874.0,
+    "after_office_hours_sgd": 3919.0,
+    "sat_pm_sun_ph_sgd": 3919.0
+  },
+  {
+    "no": 52,
+    "description": "Landing Sill",
+    "uom": "Per Pc",
+    "office_hours_sgd": 3657.0,
+    "after_office_hours_sgd": 4572.0,
+    "sat_pm_sun_ph_sgd": 4572.0
+  },
+  {
+    "no": 53,
+    "description": "Main sheave",
+    "uom": "Per Pc",
+    "office_hours_sgd": 4964.0,
+    "after_office_hours_sgd": 6139.0,
+    "sat_pm_sun_ph_sgd": 6139.0
+  },
+  {
+    "no": 54,
+    "description": "Overspeed governor",
+    "uom": "Per Pc",
+    "office_hours_sgd": 1698.0,
+    "after_office_hours_sgd": 2155.0,
+    "sat_pm_sun_ph_sgd": 2155.0
+  },
+  {
+    "no": 55,
+    "description": "Repair EBOPS Inverter Board",
+    "uom": "Per Pc",
+    "office_hours_sgd": 1045.0,
+    "after_office_hours_sgd": 1254.0,
+    "sat_pm_sun_ph_sgd": 1254.0
+  },
+  {
+    "no": 56,
+    "description": "Repair EBOPS Main PCB",
+    "uom": "Per Pc",
+    "office_hours_sgd": 1045.0,
+    "after_office_hours_sgd": 1254.0,
+    "sat_pm_sun_ph_sgd": 1254.0
+  },
+  {
+    "no": 57,
+    "description": "Sliding Shoe",
+    "uom": "Per Pc",
+    "office_hours_sgd": 235.0,
+    "after_office_hours_sgd": 313.0,
+    "sat_pm_sun_ph_sgd": 313.0
+  },
+  {
+    "no": 58,
+    "description": "Synchronization Rope (Goods Lifts)",
+    "uom": "Per Pc",
+    "office_hours_sgd": 196.0,
+    "after_office_hours_sgd": 235.0,
+    "sat_pm_sun_ph_sgd": 235.0
+  },
+  {
+    "no": 59,
+    "description": "Synchronization Rope (Passenger lift)",
+    "uom": "Per Pc",
+    "office_hours_sgd": 235.0,
+    "after_office_hours_sgd": 274.0,
+    "sat_pm_sun_ph_sgd": 274.0
+  },
+  {
+    "no": 60,
+    "description": "Tachometer",
+    "uom": "Per Pc",
+    "office_hours_sgd": 196.0,
+    "after_office_hours_sgd": 235.0,
+    "sat_pm_sun_ph_sgd": 235.0
+  },
+  {
+    "no": 61,
+    "description": "Tier",
+    "uom": "Per Pc",
+    "office_hours_sgd": 196.0,
+    "after_office_hours_sgd": 235.0,
+    "sat_pm_sun_ph_sgd": 235.0
+  },
+  {
+    "no": 62,
+    "description": "Transformer",
+    "uom": "Per Pc",
+    "office_hours_sgd": 392.0,
+    "after_office_hours_sgd": 483.0,
+    "sat_pm_sun_ph_sgd": 483.0
+  },
+  {
+    "no": 63,
+    "description": "Travelator safety brush, both sides",
+    "uom": "Per Pc",
+    "office_hours_sgd": 327.0,
+    "after_office_hours_sgd": 379.0,
+    "sat_pm_sun_ph_sgd": 379.0
+  },
+  {
+    "no": 64,
+    "description": "UPS Complete Set",
+    "uom": "Per Pc",
+    "office_hours_sgd": 1633.0,
+    "after_office_hours_sgd": 1959.0,
+    "sat_pm_sun_ph_sgd": 1959.0
+  },
+  {
+    "no": 65,
+    "description": "Standby technician",
+    "uom": "Per Man-hr",
+    "office_hours_sgd": 111.0,
+    "after_office_hours_sgd": 167.0,
+    "sat_pm_sun_ph_sgd": 222.0
+  },
+  {
+    "no": 66,
+    "description": "Step upward thrust safety switches",
+    "uom": "Per Set",
+    "office_hours_sgd": 1959.0,
+    "after_office_hours_sgd": 2939.0,
+    "sat_pm_sun_ph_sgd": 2939.0
+  },
+  {
+    "no": 67,
+    "description": "Lift No Load Testing",
+    "uom": "Per test",
+    "office_hours_sgd": 392.0,
+    "after_office_hours_sgd": 392.0,
+    "sat_pm_sun_ph_sgd": 392.0
+  },
+  {
+    "no": 68,
+    "description": "Lift Full Load Testing (for lift below 3000kg)",
+    "uom": "Per test",
+    "office_hours_sgd": 653.0,
+    "after_office_hours_sgd": 653.0,
+    "sat_pm_sun_ph_sgd": 653.0
+  },
+  {
+    "no": 69,
+    "description": "Lift Full Load Testing (for lift 3000kg and above)",
+    "uom": "Per test",
+    "office_hours_sgd": 1045.0,
+    "after_office_hours_sgd": 1045.0,
+    "sat_pm_sun_ph_sgd": 1045.0
+  },
+  {
+    "no": 70,
+    "description": "Lift AE/SPE Endorsement for No Load Test",
+    "uom": "Per test",
+    "office_hours_sgd": 457.0,
+    "after_office_hours_sgd": 457.0,
+    "sat_pm_sun_ph_sgd": 457.0
+  },
+  {
+    "no": 71,
+    "description": "Lift AE/SPE Endorsement for Full Load Test",
+    "uom": "Per test",
+    "office_hours_sgd": 588.0,
+    "after_office_hours_sgd": 588.0,
+    "sat_pm_sun_ph_sgd": 588.0
+  },
+  {
+    "no": 72,
+    "description": "Escalator/Travelator No Load Test",
+    "uom": "Per test",
+    "office_hours_sgd": 457.0,
+    "after_office_hours_sgd": 457.0,
+    "sat_pm_sun_ph_sgd": 457.0
+  },
+  {
+    "no": 73,
+    "description": "Escalator/Travelator AE/SPE for No Load Test",
+    "uom": "Per test",
+    "office_hours_sgd": 457.0,
+    "after_office_hours_sgd": 457.0,
+    "sat_pm_sun_ph_sgd": 457.0
+  },
+  {
+    "no": 74,
+    "description": "Main rope replacement (≥ 20 storey) - for Central Plaza high rise lifts",
+    "uom": "Per lift",
+    "office_hours_sgd": 15414.0,
+    "after_office_hours_sgd": 20639.0,
+    "sat_pm_sun_ph_sgd": 20639.0
+  },
+  {
+    "no": 75,
+    "description": "Main rope replacement (< 20 storey) - other lifts",
+    "uom": "Per lift",
+    "office_hours_sgd": 8882.0,
+    "after_office_hours_sgd": 11103.0,
+    "sat_pm_sun_ph_sgd": 11103.0
+  },
+  {
+    "no": 76,
+    "description": "Sheave replacement (≥ 20 storey) - for Central Plaza high rise lifts",
+    "uom": "Per lift",
+    "office_hours_sgd": 7576.0,
+    "after_office_hours_sgd": 9797.0,
+    "sat_pm_sun_ph_sgd": 9797.0
+  },
+  {
+    "no": 77,
+    "description": "Sheave replacement (< 20 storey) - other lifts",
+    "uom": "Per lift",
+    "office_hours_sgd": 4441.0,
+    "after_office_hours_sgd": 5878.0,
+    "sat_pm_sun_ph_sgd": 5878.0
+  },
+  {
+    "no": 78,
+    "description": "Machine overhaul",
+    "uom": "Per lift",
+    "office_hours_sgd": 5878.0,
+    "after_office_hours_sgd": 7576.0,
+    "sat_pm_sun_ph_sgd": 7576.0
+  },
+  {
+    "no": 79,
+    "description": "Escalator handrail sheave replacement",
+    "uom": "Per escalator",
+    "office_hours_sgd": 2874.0,
+    "after_office_hours_sgd": 3657.0,
+    "sat_pm_sun_ph_sgd": 3657.0
+  },
+  {
+    "no": 80,
+    "description": "Escalator motor coupling replacement",
+    "uom": "Per escalator",
+    "office_hours_sgd": 2351.0,
+    "after_office_hours_sgd": 3070.0,
+    "sat_pm_sun_ph_sgd": 3070.0
+  },
+  {
+    "no": 81,
+    "description": "Escalator step track repair",
+    "uom": "Per job",
+    "office_hours_sgd": 1763.0,
+    "after_office_hours_sgd": 2221.0,
+    "sat_pm_sun_ph_sgd": 2221.0
+  }
+]
